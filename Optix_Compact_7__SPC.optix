@@ -73,16 +73,32 @@ Project:
    Uri: 'urn:FTOptix:System:Net'
    Module: FTOptix.System.Net
    Version: 2.0
+  19:
+   Uri: 'urn:FTOptix:CommunicationDriver'
+   Module: FTOptix.CommunicationDriver
+   Version: 2.0
+  20:
+   Uri: 'urn:FTOptix:CommunicationDriver:Net'
+   Module: FTOptix.CommunicationDriver.Net
+   Version: 2.0
+  21:
+   Uri: 'urn:FTOptix:MicroController'
+   Module: FTOptix.MicroController
+   Version: 2.0
+  22:
+   Uri: 'urn:FTOptix:MicroController:Net'
+   Module: FTOptix.MicroController.Net
+   Version: 2.0
  Statistics:
-  TotalNodeCount: 3692
-  Objects: 635
+  TotalNodeCount: 3711
+  Objects: 641
   ObjectTypes: 21
-  Variables: 3026
+  Variables: 3039
   VariableTypes: 0
   DataTypes: 0
   Methods: 10
-  References: 19
+  References: 25
   ReferenceTypes: 0
-  Files: 27
+  Files: 32
  Nodes:
  - File: Nodes/Optix_Compact_7__SPC.yaml

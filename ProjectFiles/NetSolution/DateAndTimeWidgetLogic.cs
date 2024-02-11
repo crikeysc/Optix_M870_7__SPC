@@ -9,6 +9,8 @@ using System.Collections.Generic;
 using UAManagedCore;
 using FTOptix.SerialPort;
 using FTOptix.OPCUAServer;
+using FTOptix.MicroController;
+using FTOptix.CommunicationDriver;
 #endregion
 
 public class DateAndTimeWidgetLogic : BaseNetLogic
