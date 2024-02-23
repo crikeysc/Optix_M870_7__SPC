@@ -1,2 +1,50 @@
 Name: Model
 Type: ModelCategoryFolder
+Children:
+- Name: SIM_Model
+  Id: g=7e5d74e62386f5b3f87d00aa4bc2742f
+  Type: BaseObjectType
+  Children:
+  - Name: Sin
+    Id: g=0e8d42a92eff8971cfd53a4bcac356af
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../../NetLogic/VariablesSimulator/iSin"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: Cosine
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../../NetLogic/VariablesSimulator/iCos"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: Ramp
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../../NetLogic/VariablesSimulator/iRamp"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2

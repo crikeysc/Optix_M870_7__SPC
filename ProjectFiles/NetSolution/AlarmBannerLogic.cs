@@ -9,6 +9,10 @@ using FTOptix.UI;
 using FTOptix.OPCUAServer;
 using FTOptix.MicroController;
 using FTOptix.CommunicationDriver;
+using FTOptix.Modbus;
+using FTOptix.DataLogger;
+using FTOptix.Store;
+using FTOptix.SQLiteStore;
 #endregion
 
 public class AlarmBannerLogic : BaseNetLogic {

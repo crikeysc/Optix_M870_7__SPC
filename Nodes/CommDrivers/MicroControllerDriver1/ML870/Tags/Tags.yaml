@@ -1,2 +1,57 @@
 Name: Tags
 Type: FolderType
+Children:
+- Name: WaterLevel_LED_Sts_1_Map_DO
+  Type: MicroControllerTag
+  DataType: Boolean
+  Value: false
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "WaterLevel_LED_Sts_1_Map_DO"
+- Name: WaterLevel_LED_Sts_2_Map_DO
+  Type: MicroControllerTag
+  DataType: Boolean
+  Value: false
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "WaterLevel_LED_Sts_2_Map_DO"
+- Name: WaterLevel_LED_Sts_3_Map_DO
+  Type: MicroControllerTag
+  DataType: Boolean
+  Value: false
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "WaterLevel_LED_Sts_3_Map_DO"
+- Name: WaterLevel_LED_Sts_4_Map_DO
+  Type: MicroControllerTag
+  DataType: Boolean
+  Value: false
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "WaterLevel_LED_Sts_4_Map_DO"
+- Name: WaterLevel_LED_Sts_5_Map_DO
+  Type: MicroControllerTag
+  DataType: Boolean
+  Value: false
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "WaterLevel_LED_Sts_5_Map_DO"
+- Name: WaterLevel_LV
+  Type: MicroControllerTag
+  DataType: Float
+  Value: 0.0
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "WaterLevel_LV"

@@ -11,6 +11,8 @@ using FTOptix.DataLogger;
 using FTOptix.Alarm;
 using FTOptix.EventLogger;
 using FTOptix.RAEtherNetIP;
+using FTOptix.Modbus;
+using FTOptix.SQLiteStore;
 #endregion
 
 public class ApplicationNameLogic : BaseNetLogic

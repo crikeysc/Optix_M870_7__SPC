@@ -11,6 +11,10 @@ using FTOptix.SerialPort;
 using FTOptix.OPCUAServer;
 using FTOptix.MicroController;
 using FTOptix.CommunicationDriver;
+using FTOptix.Modbus;
+using FTOptix.DataLogger;
+using FTOptix.Store;
+using FTOptix.SQLiteStore;
 #endregion
 
 public class DateAndTimeWidgetLogic : BaseNetLogic
