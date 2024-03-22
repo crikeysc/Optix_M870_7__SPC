@@ -8130,11 +8130,11 @@ Children:
           Type: BaseDataVariableType
           DataType: Color
           ModellingRule: Optional
-          Value: "#1b5583"
+          Value: "#58f90e"
         - Name: DynamicLink
           Type: DynamicLink
           DataType: NodePath
-          Value: "../../Model/VariablesToLog/Sine/LastValue"
+          Value: "/Objects/Optix_Compact_7__SPC/Loggers/DataLogger1/VariablesToLog/Sine"
           Children:
           - Name: Mode
             Type: BaseVariableType
@@ -8163,7 +8163,7 @@ Children:
         - Name: DynamicLink
           Type: DynamicLink
           DataType: NodePath
-          Value: "../../Model/VariablesToLog/Cosine/LastValue"
+          Value: "/Objects/Optix_Compact_7__SPC/Loggers/DataLogger1/VariablesToLog/Cosine"
           Children:
           - Name: Mode
             Type: BaseVariableType
@@ -8192,7 +8192,7 @@ Children:
         - Name: DynamicLink
           Type: DynamicLink
           DataType: NodePath
-          Value: "../../Model/VariablesToLog/Ramp/LastValue"
+          Value: "../../Model/VariablesToLog/Ramp"
           Children:
           - Name: Mode
             Type: BaseVariableType
@@ -8282,7 +8282,7 @@ Children:
       Type: BaseDataVariableType
       DataType: UInt32
       ModellingRule: Optional
-      Value: 2000
+      Value: 500
     - Name: Model
       Type: NodePointer
       DataType: NodeId
@@ -8336,7 +8336,7 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: -194.0
+      Value: -196.0
     - Name: TopMargin
       Type: BaseVariableType
       DataType: Size
@@ -8426,7 +8426,7 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 56.0
+      Value: 57.0
     - Name: Width
       Type: BaseVariableType
       DataType: Size
@@ -8556,77 +8556,6 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 40.0
-    - Name: EventoMouseUpHandler1
-      Type: EventHandler
-      Children:
-      - Name: ListenEventType
-        Type: PropertyType
-        DataType: NodeId
-        Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseUpEvent"
-      - Name: MethodsToCall
-        Type: BaseObjectType
-        Children:
-        - Name: MethodContainer1
-          Type: BaseObjectType
-          Children:
-          - Name: ns=3;ObjectPointer
-            Type: NodePointer
-            DataType: NodeId
-            Value: {"IdType":0,"Id":0,"Namespace":-1}
-            Children:
-            - Name: Kind
-              Type: PropertyType
-              DataType: NodeId
-              Value: "/Types/ObjectTypes/BaseObjectType"
-            - Name: DynamicLink
-              Type: DynamicLink
-              DataType: NodePath
-              Value: "../../../../../DataGrid1@NodeId"
-              Children:
-              - Name: Mode
-                Type: BaseVariableType
-                DataType: DynamicLinkMode
-                ModellingRule: Optional
-                Value: 2
-          - Name: ns=3;Method
-            Type: BaseDataVariableType
-            DataType: String
-            Value: "Refresh"
-      - Name: EventArguments
-        Type: MouseUpEvent
-        Children:
-        - Name: EventId
-          Type: PropertyType
-          DataType: ByteString
-          Value: ""
-        - Name: EventType
-          Type: PropertyType
-          DataType: NodeId
-          Value: {"IdType":0,"Id":0,"Namespace":-1}
-        - Name: SourceNode
-          Type: PropertyType
-          DataType: NodeId
-          Value: {"IdType":0,"Id":0,"Namespace":-1}
-        - Name: SourceName
-          Type: PropertyType
-          DataType: String
-          Value: ""
-        - Name: Time
-          Type: PropertyType
-          DataType: UtcTime
-          Value: "1601-01-01T00:00:00.0000000"
-        - Name: ReceiveTime
-          Type: PropertyType
-          DataType: UtcTime
-          Value: "1601-01-01T00:00:00.0000000"
-        - Name: Message
-          Type: PropertyType
-          DataType: LocalizedText
-          Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
-        - Name: Severity
-          Type: PropertyType
-          DataType: UInt16
-          Value: 0
     - Name: HorizontalAlignment
       Type: BaseVariableType
       DataType: HorizontalAlignment
@@ -8680,7 +8609,7 @@ Children:
               Type: BaseDataVariableType
               DataType: String
               Description: {"NamespaceIndex":25,"TextId":"QueryQueryDescription"}
-              Value: "DELETE FROM \"DATALOGGER1\""
+              Value: "DELETE FROM \"Datalogger1\""
           - Name: OutputArguments
             Type: BaseObjectType
             Children:

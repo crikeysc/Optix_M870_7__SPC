@@ -172,6 +172,18 @@ Children:
           Type: StoreColumn
           DataType: Int32
           Value: 0
+        - Name: Sine_Timestamp
+          Type: StoreColumn
+          DataType: UtcTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: Cosine_Timestamp
+          Type: StoreColumn
+          DataType: UtcTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: Ramp_Timestamp
+          Type: StoreColumn
+          DataType: UtcTime
+          Value: "1601-01-01T00:00:00.0000000"
     - Name: EventLogger1
       Type: SQLiteStoreTable
       Children:
@@ -218,23 +230,6 @@ Children:
           Type: StoreColumn
           DataType: Int32
           Value: 0
-    - Name: DataLogger1
-      Type: SQLiteStoreTable
-      Children:
-      - Class: Reference
-        Target: ns=25;i=12
-        Direction: Forward
-      - Class: Reference
-        Target: ns=25;i=15
-        Direction: Forward
-      - Class: Reference
-        Target: ns=25;i=21
-        Direction: Forward
-      - Class: Reference
-        Target: ns=25;i=20
-        Direction: Forward
-      - Name: Columns
-        Type: BaseObjectType
   - Class: Reference
     Target: ns=27;i=30
     Direction: Forward

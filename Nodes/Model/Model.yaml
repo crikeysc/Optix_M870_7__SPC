@@ -14,7 +14,7 @@ Children:
     - Name: DynamicLink
       Type: DynamicLink
       DataType: NodePath
-      Value: "../../../../NetLogic/VariablesSimulator/iSin"
+      Value: "../../../NetLogic/SPC_VariablesSimulator/iSin"
       Children:
       - Name: Mode
         Type: BaseVariableType
@@ -28,7 +28,7 @@ Children:
     - Name: DynamicLink
       Type: DynamicLink
       DataType: NodePath
-      Value: "../../../../NetLogic/VariablesSimulator/iCos"
+      Value: "../../../NetLogic/SPC_VariablesSimulator/iCos"
       Children:
       - Name: Mode
         Type: BaseVariableType
@@ -42,7 +42,7 @@ Children:
     - Name: DynamicLink
       Type: DynamicLink
       DataType: NodePath
-      Value: "../../../../NetLogic/VariablesSimulator/iRamp"
+      Value: "../../../NetLogic/SPC_VariablesSimulator/iRamp"
       Children:
       - Name: Mode
         Type: BaseVariableType
