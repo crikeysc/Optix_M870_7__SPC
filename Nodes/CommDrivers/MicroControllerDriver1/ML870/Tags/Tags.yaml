@@ -1,6 +1,15 @@
 Name: Tags
 Type: FolderType
 Children:
+- Name: WWW_Test_Alarm_DI
+  Type: MicroControllerTag
+  DataType: Boolean
+  Value: false
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "WWW_Test_Alarm_DI"
 - Name: WaterLevel_LED_Sts_1_Map_DO
   Type: MicroControllerTag
   DataType: Boolean

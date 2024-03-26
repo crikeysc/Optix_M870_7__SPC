@@ -13,6 +13,7 @@ using FTOptix.EventLogger;
 using FTOptix.RAEtherNetIP;
 using FTOptix.Modbus;
 using FTOptix.SQLiteStore;
+using FTOptix.WebUI;
 #endregion
 
 public class ApplicationNameLogic : BaseNetLogic

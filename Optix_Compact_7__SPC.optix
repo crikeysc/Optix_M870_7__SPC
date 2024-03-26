@@ -113,15 +113,23 @@ Project:
    Uri: 'urn:FTOptix:SQLiteStore:Net'
    Module: FTOptix.SQLiteStore.Net
    Version: 1.0
+  29:
+   Uri: 'urn:FTOptix:WebUI'
+   Module: FTOptix.WebUI
+   Version: 1.1
+  30:
+   Uri: 'urn:FTOptix:WebUI:Net'
+   Module: FTOptix.WebUI.Net
+   Version: 1.1
  Statistics:
-  TotalNodeCount: 3949
-  Objects: 680
+  TotalNodeCount: 3783
+  Objects: 656
   ObjectTypes: 22
-  Variables: 3237
+  Variables: 3095
   VariableTypes: 0
   DataTypes: 0
   Methods: 10
-  References: 63
+  References: 65
   ReferenceTypes: 0
   Files: 32
  Nodes:

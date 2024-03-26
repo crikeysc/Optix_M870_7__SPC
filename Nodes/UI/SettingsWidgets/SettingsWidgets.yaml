@@ -366,6 +366,11 @@ Children:
         Type: DynamicLink
         DataType: NodePath
         Value: "../../SynchronizationManualMode/Checked"
+    - Name: InputFormat
+      Type: BaseDataVariableType
+      DataType: DateTimePickerInputFormatEnum
+      ModellingRule: Optional
+      Value: 0
   - Name: LocalNTPServerInterfaces
     Type: Label
     Children:

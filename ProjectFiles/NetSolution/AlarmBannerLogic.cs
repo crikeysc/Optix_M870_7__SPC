@@ -13,6 +13,7 @@ using FTOptix.Modbus;
 using FTOptix.DataLogger;
 using FTOptix.Store;
 using FTOptix.SQLiteStore;
+using FTOptix.WebUI;
 #endregion
 
 public class AlarmBannerLogic : BaseNetLogic {
