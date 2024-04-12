@@ -33,4 +33,4 @@ Children:
   Type: BaseDataVariableType
   DataType: StopBits
   Value: 0
-- File: ML870/ML870.yaml
+- File: ML870DNP3/ML870DNP3.yaml

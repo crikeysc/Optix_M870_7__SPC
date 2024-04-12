@@ -47,4 +47,4 @@ Project:
   ReferenceTypes: 0
   Files: 1
  Nodes:
- - File: DesignTimeNodes/CommDrivers/MicroControllerDriver1/ML870/TagImporter.yaml
+ - File: DesignTimeNodes/CommDrivers/MicroControllerDriver1/ML870DNP3/TagImporter.yaml

@@ -1,5 +1,5 @@
-Name: ML870
-Id: g=81ef4268abc4f95e080a3bca86b2de91
+Name: ML870DNP3
+Id: g=9b71a5abf3cbd73941a2ab1131a947c7
 Type: MicroControllerStation
 Children:
 - Name: IPAddress
