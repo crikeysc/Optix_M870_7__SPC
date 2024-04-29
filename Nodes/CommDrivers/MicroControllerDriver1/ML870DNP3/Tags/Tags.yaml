@@ -19,6 +19,15 @@ Children:
     Type: BaseDataVariableType
     DataType: String
     Value: "AIN_02_Speed_Ref"
+- Name: AIN_03_Level_PV
+  Type: MicroControllerTag
+  DataType: Float
+  Value: 0.0
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "AIN_03_Level_PV"
 - Name: AIN_03_Level_SP
   Type: MicroControllerTag
   DataType: Float
@@ -37,6 +46,15 @@ Children:
     Type: BaseDataVariableType
     DataType: String
     Value: "Level_High_High_Sts"
+- Name: Level_High_High_Sts_Alm
+  Type: MicroControllerTag
+  DataType: Boolean
+  Value: false
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Level_High_High_Sts_Alm"
 - Name: Level_High_Sts
   Type: MicroControllerTag
   DataType: Boolean
@@ -46,6 +64,15 @@ Children:
     Type: BaseDataVariableType
     DataType: String
     Value: "Level_High_Sts"
+- Name: Level_High_Sts_Alm
+  Type: MicroControllerTag
+  DataType: Boolean
+  Value: false
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Level_High_Sts_Alm"
 - Name: Level_Low_Low_Sts
   Type: MicroControllerTag
   DataType: Boolean
@@ -55,6 +82,15 @@ Children:
     Type: BaseDataVariableType
     DataType: String
     Value: "Level_Low_Low_Sts"
+- Name: Level_Low_Low_Sts_Alm
+  Type: MicroControllerTag
+  DataType: Boolean
+  Value: false
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Level_Low_Low_Sts_Alm"
 - Name: Level_Low_Sts
   Type: MicroControllerTag
   DataType: Boolean
@@ -64,6 +100,15 @@ Children:
     Type: BaseDataVariableType
     DataType: String
     Value: "Level_Low_Sts"
+- Name: Level_Low_Sts_ALm
+  Type: MicroControllerTag
+  DataType: Boolean
+  Value: false
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Level_Low_Sts_ALm"
 - Name: Optix_Ambient_Temp_STS
   Type: MicroControllerTag
   DataType: Float
@@ -163,6 +208,24 @@ Children:
     Type: BaseDataVariableType
     DataType: String
     Value: "Pump2_stsRunning"
+- Name: SCADA_DNP3Micro_Intlk
+  Type: MicroControllerTag
+  DataType: Boolean
+  Value: false
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "SCADA_DNP3Micro_Intlk"
+- Name: SCADA_DNP3Micro_UNLatch
+  Type: MicroControllerTag
+  DataType: Boolean
+  Value: false
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "SCADA_DNP3Micro_UNLatch"
 - Name: WWW_Alarm_Active
   Type: MicroControllerTag
   DataType: Boolean
