@@ -109,6 +109,15 @@ Children:
     Type: BaseDataVariableType
     DataType: String
     Value: "Level_Low_Sts_ALm"
+- Name: LoLo_Level_Value
+  Type: MicroControllerTag
+  DataType: Boolean
+  Value: false
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "LoLo_Level_Value"
 - Name: Optix_Ambient_Temp_STS
   Type: MicroControllerTag
   DataType: Float
