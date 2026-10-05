@@ -1,0 +1,2210 @@
+Name: DataTypes
+Type: FolderType
+Children:
+- Class: DataType
+  Name: EnergyMetrics
+  Id: g=d2e34eeec673945a4227ca5a2387e2cc
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "EnergyMetrics",
+    "DataType": {
+     "IdType": 2,
+     "Id": "d2e34eeec673945a4227ca5a2387e2cc",
+     "Namespace": 18
+    },
+    "Fields": [{
+      "Name": "KVA",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "KVAR",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "KW",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "KWHRS",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "PowerFactor",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "Water_TOT",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "Gas_TOT",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "Steam_TOT",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "Air_TOT",
+      "DataType": {
+       "Id": 10
+      }
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"EnergyMetrics"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: ALARM_ANALOG
+  Id: g=b47db1b103d7bec40a596a24ae227798
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "ALARM_ANALOG",
+    "DataType": {
+     "IdType": 2,
+     "Id": "b47db1b103d7bec40a596a24ae227798",
+     "Namespace": 18
+    },
+    "Fields": [{
+      "Name": "EnableIn",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "In",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "InFault",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "HHEnabled",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "HEnabled",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "LEnabled",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "LLEnabled",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "AckRequired",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "ProgAckAll",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "OperAckAll",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "HHProgAck",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "HHOperAck",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "HProgAck",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "HOperAck",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "LProgAck",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "LOperAck",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "LLProgAck",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "LLOperAck",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "ROCPosProgAck",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "ROCPosOperAck",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "ROCNegProgAck",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "ROCNegOperAck",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "ProgSuppress",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "OperSuppress",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "ProgUnsuppress",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "OperUnsuppress",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "HHOperShelve",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "HOperShelve",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "LOperShelve",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "LLOperShelve",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "ROCPosOperShelve",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "ROCNegOperShelve",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "ProgUnshelveAll",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "HHOperUnshelve",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "HOperUnshelve",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "LOperUnshelve",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "LLOperUnshelve",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "ROCPosOperUnshelve",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "ROCNegOperUnshelve",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "ProgDisable",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "OperDisable",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "ProgEnable",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "OperEnable",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "AlarmCountReset",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "HHMinDurationEnable",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "HMinDurationEnable",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "LMinDurationEnable",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "LLMinDurationEnable",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "HHLimit",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "HHSeverity",
+      "DataType": {
+       "Id": 6
+      }
+     },{
+      "Name": "HLimit",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "HSeverity",
+      "DataType": {
+       "Id": 6
+      }
+     },{
+      "Name": "LLimit",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "LSeverity",
+      "DataType": {
+       "Id": 6
+      }
+     },{
+      "Name": "LLLimit",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "LLSeverity",
+      "DataType": {
+       "Id": 6
+      }
+     },{
+      "Name": "MinDurationPRE",
+      "DataType": {
+       "Id": 6
+      }
+     },{
+      "Name": "ShelveDuration",
+      "DataType": {
+       "Id": 6
+      }
+     },{
+      "Name": "MaxShelveDuration",
+      "DataType": {
+       "Id": 6
+      }
+     },{
+      "Name": "Deadband",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "ROCPosLimit",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "ROCPosSeverity",
+      "DataType": {
+       "Id": 6
+      }
+     },{
+      "Name": "ROCNegLimit",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "ROCNegSeverity",
+      "DataType": {
+       "Id": 6
+      }
+     },{
+      "Name": "ROCPeriod",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "EnableOut",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "InAlarm",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "AnyInAlarmUnack",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "HHInAlarm",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "HInAlarm",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "LInAlarm",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "LLInAlarm",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "ROCPosInAlarm",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "ROCNegInAlarm",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "ROC",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "HHAcked",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "HAcked",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "LAcked",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "LLAcked",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "ROCPosAcked",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "ROCNegAcked",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "HHInAlarmUnack",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "HInAlarmUnack",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "LInAlarmUnack",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "LLInAlarmUnack",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "ROCPosInAlarmUnack",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "ROCNegInAlarmUnack",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Suppressed",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "HHShelved",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "HShelved",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "LShelved",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "LLShelved",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "ROCPosShelved",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "ROCNegShelved",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Disabled",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Commissioned",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "MinDurationACC",
+      "DataType": {
+       "Id": 6
+      }
+     },{
+      "Name": "HHInAlarmTime",
+      "DataType": {
+       "Id": 8
+      }
+     },{
+      "Name": "HHAlarmCount",
+      "DataType": {
+       "Id": 6
+      }
+     },{
+      "Name": "HInAlarmTime",
+      "DataType": {
+       "Id": 8
+      }
+     },{
+      "Name": "HAlarmCount",
+      "DataType": {
+       "Id": 6
+      }
+     },{
+      "Name": "LInAlarmTime",
+      "DataType": {
+       "Id": 8
+      }
+     },{
+      "Name": "LAlarmCount",
+      "DataType": {
+       "Id": 6
+      }
+     },{
+      "Name": "LLInAlarmTime",
+      "DataType": {
+       "Id": 8
+      }
+     },{
+      "Name": "LLAlarmCount",
+      "DataType": {
+       "Id": 6
+      }
+     },{
+      "Name": "ROCPosInAlarmTime",
+      "DataType": {
+       "Id": 8
+      }
+     },{
+      "Name": "ROCPosAlarmCount",
+      "DataType": {
+       "Id": 6
+      }
+     },{
+      "Name": "ROCNegInAlarmTime",
+      "DataType": {
+       "Id": 8
+      }
+     },{
+      "Name": "ROCNegAlarmCount",
+      "DataType": {
+       "Id": 6
+      }
+     },{
+      "Name": "AckTime",
+      "DataType": {
+       "Id": 8
+      }
+     },{
+      "Name": "RetToNormalTime",
+      "DataType": {
+       "Id": 8
+      }
+     },{
+      "Name": "AlarmCountResetTime",
+      "DataType": {
+       "Id": 8
+      }
+     },{
+      "Name": "ShelveTime",
+      "DataType": {
+       "Id": 8
+      }
+     },{
+      "Name": "UnshelveTime",
+      "DataType": {
+       "Id": 8
+      }
+     },{
+      "Name": "Status",
+      "DataType": {
+       "Id": 6
+      }
+     },{
+      "Name": "InstructFault",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "InFaulted",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "SeverityInv",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "AlarmLimitsInv",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "DeadbandInv",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "ROCPosLimitInv",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "ROCNegLimitInv",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "ROCPeriodInv",
+      "DataType": {
+       "Id": 1
+      }
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"ALARM_ANALOG"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: ALARM_DIGITAL
+  Id: g=191205f1570977020d23858022768298
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "ALARM_DIGITAL",
+    "DataType": {
+     "IdType": 2,
+     "Id": "191205f1570977020d23858022768298",
+     "Namespace": 18
+    },
+    "Fields": [{
+      "Name": "EnableIn",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "In",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "InFault",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Condition",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "AckRequired",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Latched",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "ProgAck",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "OperAck",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "ProgReset",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "OperReset",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "ProgSuppress",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "OperSuppress",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "ProgUnsuppress",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "OperUnsuppress",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "OperShelve",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "ProgUnshelve",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "OperUnshelve",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "ProgDisable",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "OperDisable",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "ProgEnable",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "OperEnable",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "AlarmCountReset",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "UseProgTime",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "ProgTime",
+      "DataType": {
+       "Id": 8
+      }
+     },{
+      "Name": "Severity",
+      "DataType": {
+       "Id": 6
+      }
+     },{
+      "Name": "MinDurationPRE",
+      "DataType": {
+       "Id": 6
+      }
+     },{
+      "Name": "ShelveDuration",
+      "DataType": {
+       "Id": 6
+      }
+     },{
+      "Name": "MaxShelveDuration",
+      "DataType": {
+       "Id": 6
+      }
+     },{
+      "Name": "EnableOut",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "InAlarm",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Acked",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "InAlarmUnack",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Suppressed",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Shelved",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Disabled",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Commissioned",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "MinDurationACC",
+      "DataType": {
+       "Id": 6
+      }
+     },{
+      "Name": "AlarmCount",
+      "DataType": {
+       "Id": 6
+      }
+     },{
+      "Name": "InAlarmTime",
+      "DataType": {
+       "Id": 8
+      }
+     },{
+      "Name": "AckTime",
+      "DataType": {
+       "Id": 8
+      }
+     },{
+      "Name": "RetToNormalTime",
+      "DataType": {
+       "Id": 8
+      }
+     },{
+      "Name": "AlarmCountResetTime",
+      "DataType": {
+       "Id": 8
+      }
+     },{
+      "Name": "ShelveTime",
+      "DataType": {
+       "Id": 8
+      }
+     },{
+      "Name": "UnshelveTime",
+      "DataType": {
+       "Id": 8
+      }
+     },{
+      "Name": "Status",
+      "DataType": {
+       "Id": 6
+      }
+     },{
+      "Name": "InstructFault",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "InFaulted",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "SeverityInv",
+      "DataType": {
+       "Id": 1
+      }
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"ALARM_DIGITAL"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: Current_Meter_Data
+  Id: g=3ce3e7d85a7706adb66826d3eb1ce45a
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "Current_Meter_Data",
+    "DataType": {
+     "IdType": 2,
+     "Id": "3ce3e7d85a7706adb66826d3eb1ce45a",
+     "Namespace": 18
+    },
+    "Fields": [{
+      "Name": "R",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "W",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "B",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "N",
+      "DataType": {
+       "Id": 10
+      }
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"Current_Meter_Data"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: P_Alarm
+  Id: g=f6e81a58854aba70af4a3da0f217a0ca
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "P_Alarm",
+    "DataType": {
+     "IdType": 2,
+     "Id": "f6e81a58854aba70af4a3da0f217a0ca",
+     "Namespace": 18
+    },
+    "Fields": [{
+      "Name": "Wrk_ShelfT",
+      "DataType": {
+       "IdType": 2,
+       "Id": "40ba83caae23eff2fd68de10f15f8db2",
+       "Namespace": 18
+      }
+     },{
+      "Name": "HMI_Tab",
+      "DataType": {
+       "Id": 2
+      }
+     },{
+      "Name": "Com_AE",
+      "DataType": {
+       "Id": 4
+      }
+     },{
+      "Name": "Cfg_Tag",
+      "DataType": {
+       "Id": 12
+      }
+     },{
+      "Name": "Cfg_Cond",
+      "DataType": {
+       "Id": 12
+      }
+     },{
+      "Name": "HMI_Lib",
+      "DataType": {
+       "Id": 12
+      }
+     },{
+      "Name": "HMI_Type",
+      "DataType": {
+       "Id": 12
+      }
+     },{
+      "Name": "ORdy_Unshelve",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "ORdy_Shelve",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "MRdy_Test",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "MRdy_Enable",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "MRdy_Disable",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "OCmd_Unshelve",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "OCmd_Shelve",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "OCmd_Ack",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "OCmd_Reset",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "MCmd_Test",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "MCmd_Enable",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "MCmd_Disable",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "ORdy_Ack",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "ORdy_Reset",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "EnableIn",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "EnableOut",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Inp",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Inp_OoS",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Inp_Reset",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Cfg_Exists",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Cfg_ResetReqd",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Cfg_AckReqd",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Cfg_AllowShelve",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Cfg_AllowDisable",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Cfg_Severity",
+      "DataType": {
+       "Id": 6
+      }
+     },{
+      "Name": "Cfg_MaxShelfT",
+      "DataType": {
+       "Id": 6
+      }
+     },{
+      "Name": "Cfg_AlmMinOnT",
+      "DataType": {
+       "Id": 6
+      }
+     },{
+      "Name": "PCfg_AllowExist",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "PCmd_Reset",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "PCmd_Ack",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "PCmd_Suppress",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "PCmd_Unsuppress",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "PCmd_Unshelve",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Val_Notify",
+      "DataType": {
+       "Id": 6
+      }
+     },{
+      "Name": "Val_SecToUnshelve",
+      "DataType": {
+       "Id": 6
+      }
+     },{
+      "Name": "Val_MinToUnshelve",
+      "DataType": {
+       "Id": 6
+      }
+     },{
+      "Name": "Alm",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Ack",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Shelved",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Suppressed",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Disabled",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Sts_AlmInh",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Sts_RdyReset",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Sts_RdyAck",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Sts_Err",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Err_Timer",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Err_Severity",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "P_Alarm",
+      "DataType": {
+       "Id": 1
+      }
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"P_Alarm"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: Meter_Data
+  Id: g=f77ce6d7571e0c42cfe6153ff5791ad0
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "Meter_Data",
+    "DataType": {
+     "IdType": 2,
+     "Id": "f77ce6d7571e0c42cfe6153ff5791ad0",
+     "Namespace": 18
+    },
+    "Fields": [{
+      "Name": "Volts",
+      "DataType": {
+       "IdType": 2,
+       "Id": "c8c4a040def207c363d5118ef4681c27",
+       "Namespace": 18
+      }
+     },{
+      "Name": "Current",
+      "DataType": {
+       "IdType": 2,
+       "Id": "3ce3e7d85a7706adb66826d3eb1ce45a",
+       "Namespace": 18
+      }
+     },{
+      "Name": "Reactive",
+      "DataType": {
+       "IdType": 2,
+       "Id": "1f2cc4fa1a78cdf577e0af75e3206f9b",
+       "Namespace": 18
+      }
+     },{
+      "Name": "Incoming_Supply",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Incoming_Switchgear",
+      "DataType": {
+       "Id": 1
+      }
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"Meter_Data"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: Reactive_Meter_Data
+  Id: g=1f2cc4fa1a78cdf577e0af75e3206f9b
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "Reactive_Meter_Data",
+    "DataType": {
+     "IdType": 2,
+     "Id": "1f2cc4fa1a78cdf577e0af75e3206f9b",
+     "Namespace": 18
+    },
+    "Fields": [{
+      "Name": "KW",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "KVA",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "KVAR",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "Pf",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "Hz",
+      "DataType": {
+       "Id": 10
+      }
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"Reactive_Meter_Data"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: TIMER
+  Id: g=40ba83caae23eff2fd68de10f15f8db2
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "TIMER",
+    "DataType": {
+     "IdType": 2,
+     "Id": "40ba83caae23eff2fd68de10f15f8db2",
+     "Namespace": 18
+    },
+    "Fields": [{
+      "Name": "PRE",
+      "DataType": {
+       "Id": 6
+      }
+     },{
+      "Name": "ACC",
+      "DataType": {
+       "Id": 6
+      }
+     },{
+      "Name": "EN",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "TT",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "DN",
+      "DataType": {
+       "Id": 1
+      }
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"TIMER"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: Volts_Meter_Data
+  Id: g=c8c4a040def207c363d5118ef4681c27
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "Volts_Meter_Data",
+    "DataType": {
+     "IdType": 2,
+     "Id": "c8c4a040def207c363d5118ef4681c27",
+     "Namespace": 18
+    },
+    "Fields": [{
+      "Name": "R_W",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "W_B",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "B_R",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "R_N",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "W_N",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "B_N",
+      "DataType": {
+       "Id": 10
+      }
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"Volts_Meter_Data"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: OEE
+  Id: g=f429b4bc2277c89774b68eaf1df62ac9
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "OEE",
+    "DataType": {
+     "IdType": 2,
+     "Id": "f429b4bc2277c89774b68eaf1df62ac9",
+     "Namespace": 18
+    },
+    "Fields": [{
+      "Name": "EnableIn",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "EnableOut",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "OEE_Operating_Time",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "OEE_Shift_Length",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "OEE_Short_Breaks",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "OEE_Short_Length",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "OEE_Meal_Breaks",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "OEE_Meal_Length",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "OEE_Run_Rate",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "OEE_Parts",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "OEE_Good_Parts",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "OEE_Rejected_Parts",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "OEE_Availability",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "OEE_Downtime",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "OEE_Performance",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "OEE_Quality",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "OEE_Overall",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "OEE_Production_Time",
+      "DataType": {
+       "Id": 10
+      }
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"OEE"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: P_Gate
+  Id: g=f566723c7cc3830199d9add376d4265b
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "P_Gate",
+    "DataType": {
+     "IdType": 2,
+     "Id": "f566723c7cc3830199d9add376d4265b",
+     "Namespace": 18
+    },
+    "Fields": [{
+      "Name": "Wrk_OffDlyT",
+      "DataType": {
+       "IdType": 2,
+       "Id": "40ba83caae23eff2fd68de10f15f8db2",
+       "Namespace": 18
+      }
+     },{
+      "Name": "Wrk_OnDlyT",
+      "DataType": {
+       "IdType": 2,
+       "Id": "40ba83caae23eff2fd68de10f15f8db2",
+       "Namespace": 18
+      }
+     },{
+      "Name": "Wrk_GateT",
+      "DataType": {
+       "IdType": 2,
+       "Id": "40ba83caae23eff2fd68de10f15f8db2",
+       "Namespace": 18
+      }
+     },{
+      "Name": "Cfg_InpCond",
+      "DataType": {
+       "Id": 12
+      }
+     },{
+      "Name": "HMI_Lib",
+      "DataType": {
+       "Id": 12
+      }
+     },{
+      "Name": "HMI_Type",
+      "DataType": {
+       "Id": 12
+      }
+     },{
+      "Name": "Cfg_GateCond",
+      "DataType": {
+       "Id": 12
+      }
+     },{
+      "Name": "HMI_Tab",
+      "DataType": {
+       "Id": 2
+      }
+     },{
+      "Name": "EnableIn",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "EnableOut",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Inp",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Inp_Gate",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Cfg_GateDly",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "Cfg_OnDly",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "Cfg_OffDly",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "Out",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Sts_Gate",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Sts_Err",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Err_Timer",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "P_Gate",
+      "DataType": {
+       "Id": 1
+      }
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"P_Gate"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: P_DIn
+  Id: g=21b46703284612c7b8d137cea133b25a
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "P_DIn",
+    "DataType": {
+     "IdType": 2,
+     "Id": "21b46703284612c7b8d137cea133b25a",
+     "Namespace": 18
+    },
+    "Fields": [{
+      "Name": "Cfg_Tag",
+      "DataType": {
+       "Id": 12
+      }
+     },{
+      "Name": "Cfg_Desc",
+      "DataType": {
+       "Id": 12
+      }
+     },{
+      "Name": "Cfg_Label",
+      "DataType": {
+       "Id": 12
+      }
+     },{
+      "Name": "TgtDisagree",
+      "DataType": {
+       "IdType": 2,
+       "Id": "f6e81a58854aba70af4a3da0f217a0ca",
+       "Namespace": 18
+      }
+     },{
+      "Name": "Cfg_1StText",
+      "DataType": {
+       "Id": 12
+      }
+     },{
+      "Name": "Cfg_0StText",
+      "DataType": {
+       "Id": 12
+      }
+     },{
+      "Name": "HMI_Tab",
+      "DataType": {
+       "Id": 2
+      }
+     },{
+      "Name": "HMI_Type",
+      "DataType": {
+       "Id": 12
+      }
+     },{
+      "Name": "TgtDisagreeGate",
+      "DataType": {
+       "IdType": 2,
+       "Id": "f566723c7cc3830199d9add376d4265b",
+       "Namespace": 18
+      }
+     },{
+      "Name": "Val_Notify",
+      "DataType": {
+       "Id": 6
+      }
+     },{
+      "Name": "Cfg_Area",
+      "DataType": {
+       "Id": 12
+      }
+     },{
+      "Name": "HMI_Lib",
+      "DataType": {
+       "Id": 12
+      }
+     },{
+      "Name": "IOFault",
+      "DataType": {
+       "IdType": 2,
+       "Id": "f6e81a58854aba70af4a3da0f217a0ca",
+       "Namespace": 18
+      }
+     },{
+      "Name": "OCmd_ResetAckAll",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "OCmd_Reset",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "MCmd_InpPV",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "MCmd_SubstPV",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "ORdy_ResetAckAll",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "ORdy_Reset",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "MRdy_InpPV",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "MRdy_SubstPV",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "MSet_SubstPV",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "EnableIn",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "EnableOut",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Inp_PV",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Inp_IOFault",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Inp_PVNotify",
+      "DataType": {
+       "Id": 6
+      }
+     },{
+      "Name": "Inp_Target",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Inp_Gate",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Inp_Sim",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Inp_Reset",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Cfg_NoSubstPV",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Cfg_NormTextVis",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Cfg_HasMoreObj",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Cfg_HasTgtDisagreeAlm",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Cfg_TgtDisagreeResetReqd",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Cfg_TgtDisagreeAckReqd",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Cfg_HasIOFaultAlm",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Cfg_IOFaultResetReqd",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Cfg_IOFaultAckReqd",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Cfg_TgtDisagreeSeverity",
+      "DataType": {
+       "Id": 6
+      }
+     },{
+      "Name": "Cfg_IOFaultSeverity",
+      "DataType": {
+       "Id": 6
+      }
+     },{
+      "Name": "Cfg_Debounce",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "Cfg_GateDly",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "Cfg_TgtDisagreeOnDly",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "Cfg_TgtDisagreeOffDly",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "Set_SimPV",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "PCmd_Reset",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "PCmd_TgtDisagreeAck",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "PCmd_TgtDisagreeSuppress",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "PCmd_TgtDisagreeUnsuppress",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "PCmd_TgtDisagreeUnshelve",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "PCmd_IOFaultAck",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "PCmd_IOFaultSuppress",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "PCmd_IOFaultUnsuppress",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "PCmd_IOFaultUnshelve",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "SrcQ_IO",
+      "DataType": {
+       "Id": 6
+      }
+     },{
+      "Name": "SrcQ",
+      "DataType": {
+       "Id": 6
+      }
+     },{
+      "Name": "Val_Sts",
+      "DataType": {
+       "Id": 6
+      }
+     },{
+      "Name": "Val_Fault",
+      "DataType": {
+       "Id": 6
+      }
+     },{
+      "Name": "Val_NotifyAll",
+      "DataType": {
+       "Id": 6
+      }
+     },{
+      "Name": "Val_UnackAlmC",
+      "DataType": {
+       "Id": 6
+      }
+     },{
+      "Name": "Sts",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Sts_PV",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Sts_SubstPV",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Sts_InpPV",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Sts_PVBad",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Sts_MaintByp",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Sts_AlmInh",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Sts_Err",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Err_Timer",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Err_Alarm",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Sts_RdyReset",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Sts_RdyAck",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Sts_TgtDisagreeCmp",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Sts_TgtDisagreeGate",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Sts_TgtDisagree",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Alm_TgtDisagree",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Ack_TgtDisagree",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Sts_TgtDisagreeDisabled",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Sts_TgtDisagreeShelved",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Sts_TgtDisagreeSuppressed",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Sts_IOFault",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Alm_IOFault",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Ack_IOFault",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Sts_IOFaultDisabled",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Sts_IOFaultShelved",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Sts_IOFaultSuppressed",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "P_DIn",
+      "DataType": {
+       "Id": 1
+      }
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"P_DIn"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding

@@ -30,12 +30,10 @@ Children:
     Type: BaseDataVariableType
     DataType: Boolean
     ModellingRule: Optional
-    Value: false
   - Name: TopMargin
     Type: BaseVariableType
     DataType: Size
     ModellingRule: Optional
-    Value: 0.0
   - Name: Opacity
     Type: BaseVariableType
     DataType: Float
@@ -54,21 +52,14 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 480.0
-    - Name: BorderThickness
-      Type: BaseDataVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 1.0
     - Name: LeftMargin
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 0.0
     - Name: TopMargin
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 0.0
     - Name: FillColor
       Type: BaseDataVariableType
       DataType: Color
@@ -93,7 +84,6 @@ Children:
       - Name: ShowFlow
         Type: BaseDataVariableType
         DataType: Boolean
-        Value: false
         Children:
         - Name: ConditionalConverter1
           Type: ConditionalConverter
@@ -102,12 +92,11 @@ Children:
             Type: BaseDataVariableType
             DataType: Boolean
             ReferenceType: HasSource
-            Value: false
             Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: "/Objects/Optix_Compact_7__SPC/CommDrivers/MicroControllerDriver1/ML870DNP3/Tags/Pump1_outMotorRunCoil"
+              Value: "/Objects/Optix_Compact_7__SPC/CommDrivers/RAEtherNet_IPDriver1/L310ERNSE/Tags/Program&:Pump_Control/Pump1_RunCmd"
           - Name: TrueValue
             Type: BaseDataVariableType
             DataType: Boolean
@@ -119,7 +108,6 @@ Children:
             DataType: Boolean
             ReferenceType: HasParameter
             ModellingRule: Optional
-            Value: false
       - Name: Width
         Type: BaseVariableType
         DataType: Size
@@ -153,7 +141,6 @@ Children:
         - Name: BorderColor
           Type: BaseDataVariableType
           DataType: Color
-          Value: "#00000000"
         - Name: BorderThickness
           Type: BaseDataVariableType
           DataType: Size
@@ -163,7 +150,6 @@ Children:
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 0.0
         - Name: TopMargin
           Type: BaseVariableType
           DataType: Size
@@ -213,7 +199,6 @@ Children:
               Type: BaseDataVariableType
               DataType: Boolean
               ReferenceType: HasSource
-              Value: false
               Children:
               - Name: ExpressionEvaluator1
                 Type: ExpressionEvaluator
@@ -244,7 +229,6 @@ Children:
               DataType: Float
               ReferenceType: HasParameter
               ModellingRule: Optional
-              Value: 0.0
         - Name: FlowColorPE
           Type: Image
           Children:
@@ -319,12 +303,12 @@ Children:
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 193.0
+        Value: 190.0
       - Name: TopMargin
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 174.0
+        Value: 170.0
       - Name: FillMode
         Type: BaseDataVariableType
         DataType: FillModeEnum
@@ -349,7 +333,6 @@ Children:
       - Name: ShowFlow
         Type: BaseDataVariableType
         DataType: Boolean
-        Value: false
         Children:
         - Name: ConditionalConverter1
           Type: ConditionalConverter
@@ -358,12 +341,11 @@ Children:
             Type: BaseDataVariableType
             DataType: Boolean
             ReferenceType: HasSource
-            Value: false
             Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: "/Objects/Optix_Compact_7__SPC/CommDrivers/MicroControllerDriver1/ML870DNP3/Tags/Pump2_outMotorRunCoil"
+              Value: "/Objects/Optix_Compact_7__SPC/CommDrivers/RAEtherNet_IPDriver1/L310ERNSE/Tags/Program&:Pump_Control/Pump2_RunCmd"
           - Name: TrueValue
             Type: BaseDataVariableType
             DataType: Boolean
@@ -375,7 +357,6 @@ Children:
             DataType: Boolean
             ReferenceType: HasParameter
             ModellingRule: Optional
-            Value: false
       - Name: Width
         Type: BaseVariableType
         DataType: Size
@@ -454,7 +435,6 @@ Children:
               Type: BaseDataVariableType
               DataType: Boolean
               ReferenceType: HasSource
-              Value: false
               Children:
               - Name: ExpressionEvaluator1
                 Type: ExpressionEvaluator
@@ -485,7 +465,6 @@ Children:
               DataType: Float
               ReferenceType: HasParameter
               ModellingRule: Optional
-              Value: 0.0
         - Name: FlowColorPE
           Type: Image
           Children:
@@ -565,7 +544,7 @@ Children:
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 343.0
+        Value: 342.0
       - Name: Rotation
         Type: BaseVariableType
         DataType: Size
@@ -585,12 +564,21 @@ Children:
         Value: "#00aeef"
       - Name: Level
         Type: BaseDataVariableType
-        DataType: Double
-        Value: 0.0
+        DataType: Float
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "/Objects/Optix_Compact_7__SPC/CommDrivers/RAEtherNet_IPDriver1/L310ERNSE/Tags/Program&:Pump_Control/TankLevel"
+          Children:
+          - Name: Mode
+            Type: BaseVariableType
+            DataType: DynamicLinkMode
+            ModellingRule: Optional
+            Value: 2
       - Name: MinLevel
         Type: BaseDataVariableType
         DataType: Double
-        Value: 0.0
       - Name: MaxLevel
         Type: BaseDataVariableType
         DataType: Double
@@ -663,7 +651,6 @@ Children:
         - Name: MinValue
           Type: BaseDataVariableType
           DataType: Float
-          Value: 0.0
           Children:
           - Name: DynamicLink
             Type: DynamicLink
@@ -694,7 +681,6 @@ Children:
           Type: BaseDataVariableType
           DataType: Float
           ModellingRule: Optional
-          Value: 0.0
         - Name: Orientation
           Type: BaseDataVariableType
           DataType: OrientationEnum
@@ -765,17 +751,16 @@ Children:
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 24.0
+        Value: 20.0
       - Name: TopMargin
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 21.0
+        Value: 20.0
       - Name: FillMode
         Type: BaseDataVariableType
         DataType: FillModeEnum
         ModellingRule: Optional
-        Value: 0
     - Name: PipeStraight1
       Type: ScaleLayout
       WriteMask: BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel
@@ -795,7 +780,6 @@ Children:
       - Name: ShowFlow
         Type: BaseDataVariableType
         DataType: Boolean
-        Value: false
         Children:
         - Name: ConditionalConverter1
           Type: ConditionalConverter
@@ -804,12 +788,11 @@ Children:
             Type: BaseDataVariableType
             DataType: Boolean
             ReferenceType: HasSource
-            Value: false
             Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: "/Objects/Optix_Compact_7__SPC/CommDrivers/MicroControllerDriver1/ML870DNP3/Tags/Pump2_outMotorRunCoil"
+              Value: "/Objects/Optix_Compact_7__SPC/CommDrivers/RAEtherNet_IPDriver1/L310ERNSE/Tags/Program&:Pump_Control/Pump2_RunCmd"
           - Name: TrueValue
             Type: BaseDataVariableType
             DataType: Boolean
@@ -821,7 +804,6 @@ Children:
             DataType: Boolean
             ReferenceType: HasParameter
             ModellingRule: Optional
-            Value: false
       - Name: Width
         Type: BaseVariableType
         DataType: Size
@@ -855,7 +837,6 @@ Children:
         - Name: BorderColor
           Type: BaseDataVariableType
           DataType: Color
-          Value: "#00000000"
         - Name: BorderThickness
           Type: BaseDataVariableType
           DataType: Size
@@ -865,7 +846,6 @@ Children:
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 0.0
         - Name: TopMargin
           Type: BaseVariableType
           DataType: Size
@@ -915,7 +895,6 @@ Children:
               Type: BaseDataVariableType
               DataType: Boolean
               ReferenceType: HasSource
-              Value: false
               Children:
               - Name: ExpressionEvaluator1
                 Type: ExpressionEvaluator
@@ -946,7 +925,6 @@ Children:
               DataType: Float
               ReferenceType: HasParameter
               ModellingRule: Optional
-              Value: 0.0
         - Name: FlowColorPE
           Type: Image
           Children:
@@ -1048,12 +1026,11 @@ Children:
             Type: BaseDataVariableType
             DataType: Boolean
             ReferenceType: HasSource
-            Value: false
             Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: "/Objects/Optix_Compact_7__SPC/CommDrivers/MicroControllerDriver1/ML870DNP3/Tags/Pump2_stsRunning"
+              Value: "/Objects/Optix_Compact_7__SPC/CommDrivers/RAEtherNet_IPDriver1/L310ERNSE/Tags/Program&:Pump_Control/Pump1_RunCmd"
           - Name: TrueValue
             Type: BaseDataVariableType
             DataType: Color
@@ -1175,33 +1152,17 @@ Children:
       - Name: ShowFlow
         Type: BaseDataVariableType
         DataType: Boolean
-        Value: false
         Children:
-        - Name: ConditionalConverter1
-          Type: ConditionalConverter
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "/Objects/Optix_Compact_7__SPC/CommDrivers/RAEtherNet_IPDriver1/L310ERNSE/Tags/Program&:Pump_Control/Pump2_RunCmd"
           Children:
-          - Name: Condition
-            Type: BaseDataVariableType
-            DataType: Boolean
-            ReferenceType: HasSource
-            Value: false
-            Children:
-            - Name: DynamicLink
-              Type: DynamicLink
-              DataType: NodePath
-              Value: "/Objects/Optix_Compact_7__SPC/CommDrivers/MicroControllerDriver1/ML870DNP3/Tags/Pump2_outMotorRunCoil"
-          - Name: TrueValue
-            Type: BaseDataVariableType
-            DataType: Boolean
-            ReferenceType: HasParameter
+          - Name: Mode
+            Type: BaseVariableType
+            DataType: DynamicLinkMode
             ModellingRule: Optional
-            Value: true
-          - Name: FalseValue
-            Type: BaseDataVariableType
-            DataType: Boolean
-            ReferenceType: HasParameter
-            ModellingRule: Optional
-            Value: false
+            Value: 2
       - Name: Width
         Type: BaseVariableType
         DataType: Size
@@ -1280,7 +1241,6 @@ Children:
               Type: BaseDataVariableType
               DataType: Boolean
               ReferenceType: HasSource
-              Value: false
               Children:
               - Name: ExpressionEvaluator1
                 Type: ExpressionEvaluator
@@ -1311,7 +1271,6 @@ Children:
               DataType: Float
               ReferenceType: HasParameter
               ModellingRule: Optional
-              Value: 0.0
         - Name: standardPumpFlow
           Type: Image
           Children:
@@ -1386,12 +1345,12 @@ Children:
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 475.0
+        Value: 480.0
       - Name: TopMargin
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 361.0
+        Value: 360.0
     - Name: GlobeValve1
       Type: ScaleLayout
       WriteMask: BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel
@@ -1408,12 +1367,11 @@ Children:
             Type: BaseDataVariableType
             DataType: Boolean
             ReferenceType: HasSource
-            Value: false
             Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: "/Objects/Optix_Compact_7__SPC/CommDrivers/MicroControllerDriver1/ML870DNP3/Tags/Pump2_stsRunning"
+              Value: "/Objects/Optix_Compact_7__SPC/CommDrivers/RAEtherNet_IPDriver1/L310ERNSE/Tags/Program&:Pump_Control/Pump2_RunCmd"
           - Name: TrueValue
             Type: BaseDataVariableType
             DataType: Color
@@ -1438,12 +1396,11 @@ Children:
             Type: BaseDataVariableType
             DataType: Boolean
             ReferenceType: HasSource
-            Value: false
             Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: "/Objects/Optix_Compact_7__SPC/CommDrivers/MicroControllerDriver1/ML870DNP3/Tags/Pump2_stsRunning"
+              Value: "/Objects/Optix_Compact_7__SPC/CommDrivers/RAEtherNet_IPDriver1/L310ERNSE/Tags/Program&:Pump_Control/Pump2_RunCmd"
           - Name: TrueValue
             Type: BaseDataVariableType
             DataType: Color
@@ -1601,7 +1558,7 @@ Children:
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 329.0
+        Value: 330.0
     - Name: BarGraph1
       Type: ScaleLayout
       WriteMask: BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel
@@ -1629,12 +1586,11 @@ Children:
       - Name: Value
         Type: BaseDataVariableType
         DataType: Float
-        Value: 0.0
         Children:
         - Name: DynamicLink
           Type: DynamicLink
           DataType: NodePath
-          Value: "/Objects/Optix_Compact_7__SPC/CommDrivers/MicroControllerDriver1/ML870DNP3/Tags/WaterLevel"
+          Value: "/Objects/Optix_Compact_7__SPC/CommDrivers/RAEtherNet_IPDriver1/L310ERNSE/Tags/Program&:Pump_Control/TankLevel"
           Children:
           - Name: Mode
             Type: BaseVariableType
@@ -1768,7 +1724,6 @@ Children:
         - Name: MinValue
           Type: BaseDataVariableType
           DataType: Float
-          Value: 0.0
           Children:
           - Name: DynamicLink
             Type: DynamicLink
@@ -1799,7 +1754,6 @@ Children:
           Type: BaseDataVariableType
           DataType: Float
           ModellingRule: Optional
-          Value: 0.0
         - Name: Orientation
           Type: BaseDataVariableType
           DataType: OrientationEnum
@@ -1952,7 +1906,6 @@ Children:
         - Name: Text
           Type: BaseDataVariableType
           DataType: LocalizedText
-          Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
           Children:
           - Name: DynamicLink
             Type: DynamicLink
@@ -2021,7 +1974,6 @@ Children:
         - Name: Text
           Type: BaseDataVariableType
           DataType: LocalizedText
-          Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
           Children:
           - Name: DynamicLink
             Type: DynamicLink
@@ -2083,7 +2035,6 @@ Children:
           Type: BaseVariableType
           DataType: TextVerticalAlignment
           ModellingRule: Optional
-          Value: 0
       - Name: OriginalWidth
         Type: BaseDataVariableType
         DataType: Size
@@ -2120,12 +2071,11 @@ Children:
             Type: BaseDataVariableType
             DataType: Boolean
             ReferenceType: HasSource
-            Value: false
             Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: "/Objects/Optix_Compact_7__SPC/CommDrivers/MicroControllerDriver1/ML870DNP3/Tags/Pump1_stsRunning"
+              Value: "/Objects/Optix_Compact_7__SPC/CommDrivers/RAEtherNet_IPDriver1/L310ERNSE/Tags/Program&:Pump_Control/Pump1_RunCmd"
           - Name: TrueValue
             Type: BaseDataVariableType
             DataType: Color
@@ -2222,12 +2172,12 @@ Children:
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 422.0
+        Value: 430.0
       - Name: TopMargin
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 155.0
+        Value: 157.0
     - Name: Pump2
       Type: ScaleLayout
       WriteMask: BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel
@@ -2247,12 +2197,11 @@ Children:
       - Name: ShowFlow
         Type: BaseDataVariableType
         DataType: Boolean
-        Value: false
         Children:
         - Name: DynamicLink
           Type: DynamicLink
           DataType: NodePath
-          Value: "/Objects/Optix_Compact_7__SPC/CommDrivers/MicroControllerDriver1/ML870DNP3/Tags/Pump1_outMotorRunCoil"
+          Value: "/Objects/Optix_Compact_7__SPC/CommDrivers/RAEtherNet_IPDriver1/L310ERNSE/Tags/Program&:Pump_Control/Pump1_RunCmd"
           Children:
           - Name: Mode
             Type: BaseVariableType
@@ -2337,7 +2286,6 @@ Children:
               Type: BaseDataVariableType
               DataType: Boolean
               ReferenceType: HasSource
-              Value: false
               Children:
               - Name: ExpressionEvaluator1
                 Type: ExpressionEvaluator
@@ -2368,7 +2316,6 @@ Children:
               DataType: Float
               ReferenceType: HasParameter
               ModellingRule: Optional
-              Value: 0.0
         - Name: standardPumpFlow
           Type: Image
           Children:
@@ -2468,7 +2415,6 @@ Children:
       - Name: ShowFlow
         Type: BaseDataVariableType
         DataType: Boolean
-        Value: false
         Children:
         - Name: ConditionalConverter1
           Type: ConditionalConverter
@@ -2477,12 +2423,11 @@ Children:
             Type: BaseDataVariableType
             DataType: Boolean
             ReferenceType: HasSource
-            Value: false
             Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: "/Objects/Optix_Compact_7__SPC/CommDrivers/MicroControllerDriver1/ML870DNP3/Tags/Pump1_outMotorRunCoil"
+              Value: "/Objects/Optix_Compact_7__SPC/CommDrivers/RAEtherNet_IPDriver1/L310ERNSE/Tags/Program&:Pump_Control/Pump1_RunCmd"
           - Name: TrueValue
             Type: BaseDataVariableType
             DataType: Boolean
@@ -2494,7 +2439,6 @@ Children:
             DataType: Boolean
             ReferenceType: HasParameter
             ModellingRule: Optional
-            Value: false
       - Name: Width
         Type: BaseVariableType
         DataType: Size
@@ -2573,7 +2517,6 @@ Children:
               Type: BaseDataVariableType
               DataType: Boolean
               ReferenceType: HasSource
-              Value: false
               Children:
               - Name: ExpressionEvaluator1
                 Type: ExpressionEvaluator
@@ -2604,7 +2547,6 @@ Children:
               DataType: Float
               ReferenceType: HasParameter
               ModellingRule: Optional
-              Value: 0.0
         - Name: FlowColorPE
           Type: Image
           Children:
@@ -2718,12 +2660,11 @@ Children:
             Type: BaseDataVariableType
             DataType: Boolean
             ReferenceType: HasSource
-            Value: false
             Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: "/Objects/Optix_Compact_7__SPC/CommDrivers/MicroControllerDriver1/ML870DNP3/Tags/Pump1_outMotorRunCoil"
+              Value: "/Objects/Optix_Compact_7__SPC/CommDrivers/RAEtherNet_IPDriver1/L310ERNSE/Tags/Program&:Pump_Control/Pump1_RunCmd"
           - Name: TrueValue
             Type: BaseDataVariableType
             DataType: Boolean
@@ -2735,7 +2676,6 @@ Children:
             DataType: Boolean
             ReferenceType: HasParameter
             ModellingRule: Optional
-            Value: false
       - Name: Width
         Type: BaseVariableType
         DataType: Size
@@ -2814,7 +2754,6 @@ Children:
               Type: BaseDataVariableType
               DataType: Boolean
               ReferenceType: HasSource
-              Value: false
               Children:
               - Name: ExpressionEvaluator1
                 Type: ExpressionEvaluator
@@ -2845,7 +2784,6 @@ Children:
               DataType: Float
               ReferenceType: HasParameter
               ModellingRule: Optional
-              Value: 0.0
         - Name: FlowColorPE
           Type: Image
           Children:
@@ -2920,7 +2858,7 @@ Children:
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 563.0
+        Value: 564.0
       - Name: TopMargin
         Type: BaseVariableType
         DataType: Size
@@ -3112,12 +3050,10 @@ Children:
             Type: BaseVariableType
             DataType: VerticalAlignment
             ModellingRule: Optional
-            Value: 0
           - Name: RightMargin
             Type: BaseVariableType
             DataType: Size
             ModellingRule: Optional
-            Value: 0.0
       - Name: electricalSymbol_border
         Type: Image
         Children:
@@ -3137,12 +3073,11 @@ Children:
               Type: BaseDataVariableType
               DataType: Boolean
               ReferenceType: HasSource
-              Value: false
               Children:
               - Name: DynamicLink
                 Type: DynamicLink
                 DataType: NodePath
-                Value: "/Objects/Optix_Compact_7__SPC/CommDrivers/MicroControllerDriver1/ML870DNP3/Tags/Pump2_stsRunning"
+                Value: "/Objects/Optix_Compact_7__SPC/CommDrivers/RAEtherNet_IPDriver1/L310ERNSE/Tags/Program&:Pump_Control/FSW_155"
             - Name: TrueValue
               Type: BaseDataVariableType
               DataType: Color
@@ -3199,17 +3134,14 @@ Children:
         Type: BaseVariableType
         DataType: HorizontalAlignment
         ModellingRule: Optional
-        Value: 0
       - Name: VerticalAlignment
         Type: BaseVariableType
         DataType: VerticalAlignment
         ModellingRule: Optional
-        Value: 0
       - Name: RightMargin
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 0.0
       - Name: BottomMargin
         Type: BaseVariableType
         DataType: Size
@@ -3298,12 +3230,10 @@ Children:
             Type: BaseVariableType
             DataType: VerticalAlignment
             ModellingRule: Optional
-            Value: 0
           - Name: RightMargin
             Type: BaseVariableType
             DataType: Size
             ModellingRule: Optional
-            Value: 0.0
       - Name: electricalSymbol_border
         Type: Image
         Children:
@@ -3323,12 +3253,11 @@ Children:
               Type: BaseDataVariableType
               DataType: Boolean
               ReferenceType: HasSource
-              Value: false
               Children:
               - Name: DynamicLink
                 Type: DynamicLink
                 DataType: NodePath
-                Value: "/Objects/Optix_Compact_7__SPC/CommDrivers/MicroControllerDriver1/ML870DNP3/Tags/Pump1_stsRunning"
+                Value: "/Objects/Optix_Compact_7__SPC/CommDrivers/RAEtherNet_IPDriver1/L310ERNSE/Tags/Program&:Pump_Control/FSW_154"
             - Name: TrueValue
               Type: BaseDataVariableType
               DataType: Color
@@ -3360,7 +3289,7 @@ Children:
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 52.0
+          Value: 50.0
       - Name: OriginalWidth
         Type: BaseDataVariableType
         DataType: Size
@@ -3385,22 +3314,18 @@ Children:
         Type: BaseVariableType
         DataType: HorizontalAlignment
         ModellingRule: Optional
-        Value: 0
       - Name: VerticalAlignment
         Type: BaseVariableType
         DataType: VerticalAlignment
         ModellingRule: Optional
-        Value: 0
       - Name: RightMargin
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 0.0
       - Name: BottomMargin
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 0.0
     - Name: LiquidLevelSwitchNC1
       Type: ScaleLayout
       WriteMask: BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel
@@ -3431,7 +3356,6 @@ Children:
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 0.0
         - Name: TopMargin
           Type: BaseVariableType
           DataType: Size
@@ -3466,12 +3390,10 @@ Children:
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 0.0
         - Name: BottomMargin
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 0.0
       - Name: Label2
         Type: Label
         Children:
@@ -3504,12 +3426,10 @@ Children:
           Type: BaseVariableType
           DataType: VerticalAlignment
           ModellingRule: Optional
-          Value: 0
         - Name: RightMargin
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 0.0
       - Name: OriginalWidth
         Type: BaseDataVariableType
         DataType: Size
@@ -3549,12 +3469,11 @@ Children:
               Type: BaseDataVariableType
               DataType: Boolean
               ReferenceType: HasSource
-              Value: false
               Children:
               - Name: DynamicLink
                 Type: DynamicLink
                 DataType: NodePath
-                Value: "/Objects/Optix_Compact_7__SPC/CommDrivers/MicroControllerDriver1/ML870DNP3/Tags/Pump1_stsRunning"
+                Value: "/Objects/Optix_Compact_7__SPC/CommDrivers/RAEtherNet_IPDriver1/L310ERNSE/Tags/Program&:Pump_Control/LSH_151"
             - Name: TrueValue
               Type: BaseDataVariableType
               DataType: Color
@@ -3581,7 +3500,6 @@ Children:
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 0.0
         - Name: TopMargin
           Type: BaseVariableType
           DataType: Size
@@ -3601,12 +3519,10 @@ Children:
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 0.0
         - Name: BottomMargin
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 0.0
         - Name: Visible
           Type: BaseDataVariableType
           DataType: Boolean
@@ -3621,22 +3537,18 @@ Children:
         Type: BaseVariableType
         DataType: HorizontalAlignment
         ModellingRule: Optional
-        Value: 0
       - Name: VerticalAlignment
         Type: BaseVariableType
         DataType: VerticalAlignment
         ModellingRule: Optional
-        Value: 0
       - Name: RightMargin
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 0.0
       - Name: BottomMargin
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 0.0
     - Name: LiquidLevelSwitchNC2
       Type: ScaleLayout
       WriteMask: BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel
@@ -3667,7 +3579,6 @@ Children:
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 0.0
         - Name: TopMargin
           Type: BaseVariableType
           DataType: Size
@@ -3702,12 +3613,10 @@ Children:
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 0.0
         - Name: BottomMargin
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 0.0
       - Name: Label2
         Type: Label
         Children:
@@ -3740,12 +3649,10 @@ Children:
           Type: BaseVariableType
           DataType: VerticalAlignment
           ModellingRule: Optional
-          Value: 0
         - Name: RightMargin
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 0.0
       - Name: OriginalWidth
         Type: BaseDataVariableType
         DataType: Size
@@ -3760,12 +3667,12 @@ Children:
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 9.0
+        Value: 10.0
       - Name: TopMargin
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 299.0
+        Value: 300.0
       - Name: electricalSymbol_border
         Type: Image
         Children:
@@ -3785,12 +3692,11 @@ Children:
               Type: BaseDataVariableType
               DataType: Boolean
               ReferenceType: HasSource
-              Value: false
               Children:
               - Name: DynamicLink
                 Type: DynamicLink
                 DataType: NodePath
-                Value: "/Objects/Optix_Compact_7__SPC/CommDrivers/MicroControllerDriver1/ML870DNP3/Tags/Pump2_stsRunning"
+                Value: "/Objects/Optix_Compact_7__SPC/CommDrivers/RAEtherNet_IPDriver1/L310ERNSE/Tags/Program&:Pump_Control/LSL_152"
             - Name: TrueValue
               Type: BaseDataVariableType
               DataType: Color
@@ -3817,7 +3723,6 @@ Children:
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 0.0
         - Name: TopMargin
           Type: BaseVariableType
           DataType: Size
@@ -3837,12 +3742,10 @@ Children:
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 0.0
         - Name: BottomMargin
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 0.0
         - Name: Visible
           Type: BaseDataVariableType
           DataType: Boolean
@@ -3857,17 +3760,14 @@ Children:
         Type: BaseVariableType
         DataType: HorizontalAlignment
         ModellingRule: Optional
-        Value: 0
       - Name: VerticalAlignment
         Type: BaseVariableType
         DataType: VerticalAlignment
         ModellingRule: Optional
-        Value: 0
       - Name: RightMargin
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 0.0
       - Name: BottomMargin
         Type: BaseVariableType
         DataType: Size
@@ -4281,12 +4181,11 @@ Children:
             Type: BaseDataVariableType
             DataType: Boolean
             ReferenceType: HasSource
-            Value: false
             Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: "/Objects/Optix_Compact_7__SPC/CommDrivers/MicroControllerDriver1/ML870DNP3/Tags/Pump1_stsRunning"
+              Value: "/Objects/Optix_Compact_7__SPC/CommDrivers/RAEtherNet_IPDriver1/L310ERNSE/Tags/Program&:Pump_Control/Pump1_RunCmd"
           - Name: TrueValue
             Type: BaseDataVariableType
             DataType: Color
@@ -4311,12 +4210,11 @@ Children:
             Type: BaseDataVariableType
             DataType: Boolean
             ReferenceType: HasSource
-            Value: false
             Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: "/Objects/Optix_Compact_7__SPC/CommDrivers/MicroControllerDriver1/ML870DNP3/Tags/Pump1_stsRunning"
+              Value: "/Objects/Optix_Compact_7__SPC/CommDrivers/RAEtherNet_IPDriver1/L310ERNSE/Tags/Program&:Pump_Control/Pump1_RunCmd"
           - Name: TrueValue
             Type: BaseDataVariableType
             DataType: Color
@@ -4592,7 +4490,6 @@ Children:
       - Name: ShowFlow
         Type: BaseDataVariableType
         DataType: Boolean
-        Value: false
         Children:
         - Name: ConditionalConverter1
           Type: ConditionalConverter
@@ -4601,12 +4498,11 @@ Children:
             Type: BaseDataVariableType
             DataType: Boolean
             ReferenceType: HasSource
-            Value: false
             Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: "/Objects/Optix_Compact_7__SPC/CommDrivers/MicroControllerDriver1/ML870DNP3/Tags/Pump2_outMotorRunCoil"
+              Value: "/Objects/Optix_Compact_7__SPC/CommDrivers/RAEtherNet_IPDriver1/L310ERNSE/Tags/Program&:Pump_Control/Pump2_RunCmd"
           - Name: TrueValue
             Type: BaseDataVariableType
             DataType: Boolean
@@ -4618,7 +4514,6 @@ Children:
             DataType: Boolean
             ReferenceType: HasParameter
             ModellingRule: Optional
-            Value: false
       - Name: Width
         Type: BaseVariableType
         DataType: Size
@@ -4697,7 +4592,6 @@ Children:
               Type: BaseDataVariableType
               DataType: Boolean
               ReferenceType: HasSource
-              Value: false
               Children:
               - Name: ExpressionEvaluator1
                 Type: ExpressionEvaluator
@@ -4728,7 +4622,6 @@ Children:
               DataType: Float
               ReferenceType: HasParameter
               ModellingRule: Optional
-              Value: 0.0
         - Name: FlowColorPE
           Type: Image
           Children:
@@ -4833,7 +4726,6 @@ Children:
       - Name: ShowFlow
         Type: BaseDataVariableType
         DataType: Boolean
-        Value: false
         Children:
         - Name: ConditionalConverter1
           Type: ConditionalConverter
@@ -4842,12 +4734,11 @@ Children:
             Type: BaseDataVariableType
             DataType: Boolean
             ReferenceType: HasSource
-            Value: false
             Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: "/Objects/Optix_Compact_7__SPC/CommDrivers/MicroControllerDriver1/ML870DNP3/Tags/Pump2_outMotorRunCoil"
+              Value: "/Objects/Optix_Compact_7__SPC/CommDrivers/RAEtherNet_IPDriver1/L310ERNSE/Tags/Program&:Pump_Control/Pump2_RunCmd"
           - Name: TrueValue
             Type: BaseDataVariableType
             DataType: Boolean
@@ -4859,7 +4750,6 @@ Children:
             DataType: Boolean
             ReferenceType: HasParameter
             ModellingRule: Optional
-            Value: false
       - Name: Width
         Type: BaseVariableType
         DataType: Size
@@ -4938,7 +4828,6 @@ Children:
               Type: BaseDataVariableType
               DataType: Boolean
               ReferenceType: HasSource
-              Value: false
               Children:
               - Name: ExpressionEvaluator1
                 Type: ExpressionEvaluator
@@ -4969,7 +4858,6 @@ Children:
               DataType: Float
               ReferenceType: HasParameter
               ModellingRule: Optional
-              Value: 0.0
         - Name: FlowColorPE
           Type: Image
           Children:
@@ -5074,7 +4962,6 @@ Children:
       - Name: ShowFlow
         Type: BaseDataVariableType
         DataType: Boolean
-        Value: false
         Children:
         - Name: ConditionalConverter1
           Type: ConditionalConverter
@@ -5083,12 +4970,11 @@ Children:
             Type: BaseDataVariableType
             DataType: Boolean
             ReferenceType: HasSource
-            Value: false
             Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: "/Objects/Optix_Compact_7__SPC/CommDrivers/MicroControllerDriver1/ML870DNP3/Tags/Pump1_outMotorRunCoil"
+              Value: "/Objects/Optix_Compact_7__SPC/CommDrivers/RAEtherNet_IPDriver1/L310ERNSE/Tags/Program&:Pump_Control/Pump1_RunCmd"
           - Name: TrueValue
             Type: BaseDataVariableType
             DataType: Boolean
@@ -5100,7 +4986,6 @@ Children:
             DataType: Boolean
             ReferenceType: HasParameter
             ModellingRule: Optional
-            Value: false
       - Name: Width
         Type: BaseVariableType
         DataType: Size
@@ -5179,7 +5064,6 @@ Children:
               Type: BaseDataVariableType
               DataType: Boolean
               ReferenceType: HasSource
-              Value: false
               Children:
               - Name: ExpressionEvaluator1
                 Type: ExpressionEvaluator
@@ -5210,7 +5094,6 @@ Children:
               DataType: Float
               ReferenceType: HasParameter
               ModellingRule: Optional
-              Value: 0.0
         - Name: FlowColorPE
           Type: Image
           Children:
@@ -5313,7 +5196,7 @@ Children:
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 77.0
+        Value: 30.0
       - Name: Height
         Type: BaseVariableType
         DataType: Size
@@ -5328,12 +5211,10 @@ Children:
         Type: BaseVariableType
         DataType: HorizontalAlignment
         ModellingRule: Optional
-        Value: 0
       - Name: VerticalAlignment
         Type: BaseVariableType
         DataType: VerticalAlignment
         ModellingRule: Optional
-        Value: 0
       - Name: RightMargin
         Type: BaseVariableType
         DataType: Size
@@ -5381,11 +5262,9 @@ Children:
                 Type: BaseDataVariableType
                 DataType: NodeId
                 ValueRank: ScalarOrOneDimension
-                Value: {"IdType":0,"Id":0,"Namespace":-1}
               - Name: ParentItem
                 Type: BaseDataVariableType
                 DataType: NodeId
-                Value: {"IdType":0,"Id":0,"Namespace":-1}
                 Children:
                 - Name: DynamicLink
                   Type: DynamicLink
@@ -5403,42 +5282,33 @@ Children:
               - Name: DialogNodeId
                 Type: BaseDataVariableType
                 DataType: NodeId
-                Value: {"IdType":0,"Id":0,"Namespace":-1}
         - Name: EventArguments
           Type: MouseDownEvent
           Children:
           - Name: EventId
             Type: PropertyType
             DataType: ByteString
-            Value: ""
           - Name: EventType
             Type: PropertyType
             DataType: NodeId
-            Value: {"IdType":0,"Id":0,"Namespace":-1}
           - Name: SourceNode
             Type: PropertyType
             DataType: NodeId
-            Value: {"IdType":0,"Id":0,"Namespace":-1}
           - Name: SourceName
             Type: PropertyType
             DataType: String
-            Value: ""
           - Name: Time
             Type: PropertyType
             DataType: UtcTime
-            Value: "1601-01-01T00:00:00.0000000"
           - Name: ReceiveTime
             Type: PropertyType
             DataType: UtcTime
-            Value: "1601-01-01T00:00:00.0000000"
           - Name: Message
             Type: PropertyType
             DataType: LocalizedText
-            Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
           - Name: Severity
             Type: PropertyType
             DataType: UInt16
-            Value: 0
       - Name: BottomMargin
         Type: BaseVariableType
         DataType: Size
@@ -5463,7 +5333,6 @@ Children:
       - Name: ShowFlow
         Type: BaseDataVariableType
         DataType: Boolean
-        Value: false
         Children:
         - Name: ConditionalConverter1
           Type: ConditionalConverter
@@ -5472,12 +5341,11 @@ Children:
             Type: BaseDataVariableType
             DataType: Boolean
             ReferenceType: HasSource
-            Value: false
             Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: "/Objects/Optix_Compact_7__SPC/CommDrivers/MicroControllerDriver1/ML870DNP3/Tags/Pump2_outMotorRunCoil"
+              Value: "/Objects/Optix_Compact_7__SPC/CommDrivers/RAEtherNet_IPDriver1/L310ERNSE/Tags/Program&:Pump_Control/Pump2_RunCmd"
           - Name: TrueValue
             Type: BaseDataVariableType
             DataType: Boolean
@@ -5489,7 +5357,6 @@ Children:
             DataType: Boolean
             ReferenceType: HasParameter
             ModellingRule: Optional
-            Value: false
       - Name: Width
         Type: BaseVariableType
         DataType: Size
@@ -5568,7 +5435,6 @@ Children:
               Type: BaseDataVariableType
               DataType: Boolean
               ReferenceType: HasSource
-              Value: false
               Children:
               - Name: ExpressionEvaluator1
                 Type: ExpressionEvaluator
@@ -5599,7 +5465,6 @@ Children:
               DataType: Float
               ReferenceType: HasParameter
               ModellingRule: Optional
-              Value: 0.0
         - Name: FlowColorPE
           Type: Image
           Children:
@@ -5887,12 +5752,11 @@ Children:
       - Name: Value
         Type: BaseDataVariableType
         DataType: Double
-        Value: 0.0
         Children:
         - Name: DynamicLink
           Type: DynamicLink
           DataType: NodePath
-          Value: "/Objects/Optix_Compact_7__SPC/CommDrivers/MicroControllerDriver1/ML870DNP3/Tags/WaterLevel"
+          Value: "/Objects/Optix_Compact_7__SPC/CommDrivers/RAEtherNet_IPDriver1/L310ERNSE/Tags/Program&:Pump_Control/TankLevel"
           Children:
           - Name: Mode
             Type: BaseVariableType
@@ -5933,7 +5797,168 @@ Children:
         Type: BaseDataVariableType
         DataType: Boolean
         ModellingRule: Optional
-        Value: false
+    - Name: Label1
+      Type: Label
+      Children:
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ModellingRule: Optional
+        Value: {"LocaleId":"en-US","Text":"Pump 1"}
+      - Name: LeftMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 490.0
+      - Name: TopMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 99.0
+    - Name: Label2
+      Type: Label
+      Children:
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ModellingRule: Optional
+        Value: {"LocaleId":"en-US","Text":"Pump 2"}
+      - Name: LeftMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 500.0
+      - Name: TopMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 320.0
+    - Name: Button2
+      Type: Button
+      Children:
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ModellingRule: Optional
+        Value: {"LocaleId":"en-US","Text":"Interlocks"}
+      - Name: LeftMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 10.0
+      - Name: TopMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 430.0
+      - Name: Height
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 40.0
+      - Name: Width
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 104.0
+      - Name: HorizontalAlignment
+        Type: BaseVariableType
+        DataType: HorizontalAlignment
+        ModellingRule: Optional
+      - Name: VerticalAlignment
+        Type: BaseVariableType
+        DataType: VerticalAlignment
+        ModellingRule: Optional
+      - Name: RightMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 332.0
+      - Name: TextColor
+        Type: BaseDataVariableType
+        DataType: Color
+        ModellingRule: Optional
+        Value: "#000000"
+      - Name: MouseDownEventHandler1
+        Type: EventHandler
+        Children:
+        - Name: ListenEventType
+          Type: PropertyType
+          DataType: NodeId
+          Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseDownEvent"
+        - Name: MethodsToCall
+          Type: BaseObjectType
+          Children:
+          - Name: MethodContainer1
+            Type: BaseObjectType
+            Children:
+            - Name: ns=3;ObjectPointer
+              Type: NodePointer
+              DataType: NodeId
+              Children:
+              - Name: Kind
+                Type: PropertyType
+                DataType: NodeId
+                Value: "/Types/ObjectTypes/BaseObjectType"
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "{PanelLoader1}@NodeId"
+                Children:
+                - Name: Mode
+                  Type: BaseVariableType
+                  DataType: DynamicLinkMode
+                  ModellingRule: Optional
+                  Value: 2
+            - Name: ns=3;Method
+              Type: BaseDataVariableType
+              DataType: String
+              Value: "ChangePanel"
+            - Name: InputArguments
+              Type: BaseObjectType
+              Children:
+              - Name: NewPanel
+                Type: BaseDataVariableType
+                DataType: NodeId
+                Description: {"NamespaceIndex":5,"TextId":"ChangePanelNewPanelDescription"}
+                Value: "/Objects/Optix_Compact_7__SPC/UI/Screens/AIN"
+              - Name: AliasNode
+                Type: BaseDataVariableType
+                DataType: NodeId
+                Description: {"NamespaceIndex":5,"TextId":"ChangePanelAliasNodeDescription"}
+                ValueRank: ScalarOrOneDimension
+        - Name: EventArguments
+          Type: MouseDownEvent
+          Children:
+          - Name: EventId
+            Type: PropertyType
+            DataType: ByteString
+          - Name: EventType
+            Type: PropertyType
+            DataType: NodeId
+          - Name: SourceNode
+            Type: PropertyType
+            DataType: NodeId
+          - Name: SourceName
+            Type: PropertyType
+            DataType: String
+          - Name: Time
+            Type: PropertyType
+            DataType: UtcTime
+          - Name: ReceiveTime
+            Type: PropertyType
+            DataType: UtcTime
+          - Name: Message
+            Type: PropertyType
+            DataType: LocalizedText
+          - Name: Severity
+            Type: PropertyType
+            DataType: UInt16
+      - Name: BottomMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 441.0
 - Name: Level
   Id: g=82b884db997eae9454e6e039389b7d1d
   Supertype: Panel
@@ -5970,12 +5995,10 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 0.0
     - Name: TopMargin
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 0.0
   - Name: Rectangle1
     Type: Rectangle
     Children:
@@ -5989,11 +6012,6 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 290.0
-    - Name: BorderThickness
-      Type: BaseDataVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 1.0
     - Name: LeftMargin
       Type: BaseVariableType
       DataType: Size
@@ -6142,7 +6160,6 @@ Children:
       - Name: Active
         Type: BaseDataVariableType
         DataType: Boolean
-        Value: false
       - Name: Width
         Type: BaseVariableType
         DataType: Size
@@ -6165,7 +6182,6 @@ Children:
             Type: BaseDataVariableType
             DataType: Boolean
             ReferenceType: HasSource
-            Value: false
             Children:
             - Name: DynamicLink
               Type: DynamicLink
@@ -6202,7 +6218,6 @@ Children:
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 0.0
       - Name: TopMargin
         Type: BaseVariableType
         DataType: Size
@@ -6212,14 +6227,12 @@ Children:
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 0.0
     - Name: LED2
       Type: Led
       Children:
       - Name: Active
         Type: BaseDataVariableType
         DataType: Boolean
-        Value: false
       - Name: Width
         Type: BaseVariableType
         DataType: Size
@@ -6242,7 +6255,6 @@ Children:
             Type: BaseDataVariableType
             DataType: Boolean
             ReferenceType: HasSource
-            Value: false
             Children:
             - Name: DynamicLink
               Type: DynamicLink
@@ -6279,7 +6291,6 @@ Children:
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 0.0
       - Name: TopMargin
         Type: BaseVariableType
         DataType: Size
@@ -6289,14 +6300,12 @@ Children:
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 0.0
     - Name: LED3
       Type: Led
       Children:
       - Name: Active
         Type: BaseDataVariableType
         DataType: Boolean
-        Value: false
       - Name: Width
         Type: BaseVariableType
         DataType: Size
@@ -6319,7 +6328,6 @@ Children:
             Type: BaseDataVariableType
             DataType: Boolean
             ReferenceType: HasSource
-            Value: false
             Children:
             - Name: DynamicLink
               Type: DynamicLink
@@ -6356,7 +6364,6 @@ Children:
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 0.0
       - Name: TopMargin
         Type: BaseVariableType
         DataType: Size
@@ -6366,14 +6373,12 @@ Children:
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 0.0
     - Name: LED4
       Type: Led
       Children:
       - Name: Active
         Type: BaseDataVariableType
         DataType: Boolean
-        Value: false
       - Name: Width
         Type: BaseVariableType
         DataType: Size
@@ -6396,7 +6401,6 @@ Children:
             Type: BaseDataVariableType
             DataType: Boolean
             ReferenceType: HasSource
-            Value: false
             Children:
             - Name: DynamicLink
               Type: DynamicLink
@@ -6433,7 +6437,6 @@ Children:
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 0.0
       - Name: TopMargin
         Type: BaseVariableType
         DataType: Size
@@ -6443,7 +6446,6 @@ Children:
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 0.0
     - Name: Label5
       Type: Label
       Children:
@@ -6481,7 +6483,6 @@ Children:
         Type: BaseDataVariableType
         DataType: Font
         ModellingRule: Optional
-        Value: ""
       - Name: FontSize
         Type: BaseDataVariableType
         DataType: Size
@@ -6504,7 +6505,6 @@ Children:
       Type: BaseDataVariableType
       DataType: Boolean
       AccessLevel: Read
-      Value: false
       Children:
       - Name: DynamicLink
         Type: DynamicLink
@@ -6548,7 +6548,6 @@ Children:
       Type: BaseDataVariableType
       DataType: Boolean
       AccessLevel: Read
-      Value: false
       Children:
       - Name: DynamicLink
         Type: DynamicLink
@@ -6631,7 +6630,6 @@ Children:
     Type: BaseVariableType
     DataType: Size
     ModellingRule: Optional
-    Value: 0.0
   - Name: Rectangle1
     Type: Rectangle
     Children:
@@ -6645,11 +6643,6 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 480.0
-    - Name: BorderThickness
-      Type: BaseDataVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 1.0
     - Name: FillColor
       Type: BaseDataVariableType
       DataType: Color
@@ -6659,24 +6652,21 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 0.0
     - Name: TopMargin
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 1.0
     - Name: LinearGauge1
       Type: LinearGauge
       Children:
       - Name: Value
         Type: BaseDataVariableType
         DataType: Float
-        Value: 0.0
         Children:
         - Name: DynamicLink
           Type: DynamicLink
           DataType: NodePath
-          Value: "/Objects/Optix_Compact_7__SPC/CommDrivers/MicroControllerDriver1/ML870DNP3/Tags/Optix_Ambient_Temp_STS"
+          Value: "/Objects/Optix_Compact_7__SPC/CommDrivers/RAEtherNet_IPDriver1/L310ERNSE/Tags/Program&:Pump_Control/TankLevel"
           Children:
           - Name: Mode
             Type: BaseVariableType
@@ -6686,70 +6676,6 @@ Children:
       - Name: MinValue
         Type: BaseDataVariableType
         DataType: Float
-        Value: 0.0
-      - Name: MaxValue
-        Type: BaseDataVariableType
-        DataType: Float
-        Value: 75.0
-      - Name: WarningZones
-        Type: BaseObjectType
-      - Name: Width
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 84.0
-      - Name: Height
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 281.0
-      - Name: LeftMargin
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 71.0
-      - Name: TopMargin
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 104.0
-      - Name: Orientation
-        Type: BaseDataVariableType
-        DataType: OrientationEnum
-        ModellingRule: Optional
-        Value: 1
-      - Name: ScalePosition
-        Type: BaseDataVariableType
-        DataType: PositionEnum
-        ModellingRule: Optional
-        Value: 2
-      - Name: ValueChangeBehaviour
-        Type: BaseDataVariableType
-        DataType: ValueChangeBehaviour
-        ModellingRule: Optional
-        Value: 0
-    - Name: CircularGauge1
-      Type: CircularGauge
-      Children:
-      - Name: Value
-        Type: BaseDataVariableType
-        DataType: Float
-        Value: 0.0
-        Children:
-        - Name: DynamicLink
-          Type: DynamicLink
-          DataType: NodePath
-          Value: "/Objects/Optix_Compact_7__SPC/CommDrivers/MicroControllerDriver1/ML870DNP3/Tags/Optix_Spd_Ref_STS"
-          Children:
-          - Name: Mode
-            Type: BaseVariableType
-            DataType: DynamicLinkMode
-            ModellingRule: Optional
-            Value: 2
-      - Name: MinValue
-        Type: BaseDataVariableType
-        DataType: Float
-        Value: 0.0
       - Name: MaxValue
         Type: BaseDataVariableType
         DataType: Float
@@ -6760,34 +6686,50 @@ Children:
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 210.0
+        Value: 80.0
       - Name: Height
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 210.0
+        Value: 281.0
       - Name: LeftMargin
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 433.0
+        Value: 40.0
       - Name: TopMargin
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 197.0
+        Value: 170.0
+      - Name: Orientation
+        Type: BaseDataVariableType
+        DataType: OrientationEnum
+        ModellingRule: Optional
+        Value: 1
+      - Name: ScalePosition
+        Type: BaseDataVariableType
+        DataType: PositionEnum
+        ModellingRule: Optional
+      - Name: ValueChangeBehaviour
+        Type: BaseDataVariableType
+        DataType: ValueChangeBehaviour
+        ModellingRule: Optional
+      - Name: Editable
+        Type: BaseDataVariableType
+        DataType: Boolean
+        ModellingRule: Optional
     - Name: SpinBox1
       Type: SpinBox
       Children:
       - Name: Value
         Type: BaseDataVariableType
         DataType: Double
-        Value: 0.0
         Children:
         - Name: DynamicLink
           Type: DynamicLink
           DataType: NodePath
-          Value: "/Objects/Optix_Compact_7__SPC/CommDrivers/MicroControllerDriver1/ML870DNP3/Tags/WaterLevel"
+          Value: "/Objects/Optix_Compact_7__SPC/CommDrivers/RAEtherNet_IPDriver1/L310ERNSE/Tags/Program&:Pump_Control/TankLevel"
           Children:
           - Name: Mode
             Type: BaseVariableType
@@ -6803,12 +6745,12 @@ Children:
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 197.0
+        Value: 20.0
       - Name: TopMargin
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 328.0
+        Value: 78.0
       - Name: Height
         Type: BaseVariableType
         DataType: Size
@@ -6828,106 +6770,6 @@ Children:
         Type: BaseDataVariableType
         DataType: Boolean
         ModellingRule: Optional
-        Value: false
-    - Name: TextBox1
-      Type: TextBox
-      Children:
-      - Name: Text
-        Type: BaseDataVariableType
-        DataType: LocalizedText
-        Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
-        Children:
-        - Name: DynamicLink
-          Type: DynamicLink
-          DataType: NodePath
-          Value: "/Objects/Optix_Compact_7__SPC/CommDrivers/MicroControllerDriver1/ML870DNP3/Tags/Optix_Ambient_Temp_STS"
-          Children:
-          - Name: Mode
-            Type: BaseVariableType
-            DataType: DynamicLinkMode
-            ModellingRule: Optional
-            Value: 2
-      - Name: Width
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 110.0
-      - Name: LeftMargin
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 25.0
-      - Name: TopMargin
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 59.0
-      - Name: TextHorizontalAlignment
-        Type: BaseVariableType
-        DataType: TextHorizontalAlignment
-        ModellingRule: Optional
-        Value: 1
-      - Name: TextVerticalAlignment
-        Type: BaseVariableType
-        DataType: TextVerticalAlignment
-        ModellingRule: Optional
-        Value: 1
-    - Name: Label1
-      Type: Label
-      Children:
-      - Name: Text
-        Type: BaseDataVariableType
-        DataType: LocalizedText
-        ModellingRule: Optional
-        Value: {"LocaleId":"en-US","Text":"Room Temp"}
-      - Name: LeftMargin
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 43.0
-      - Name: TopMargin
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 25.0
-      - Name: Width
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 72.0
-      - Name: Height
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 19.0
-    - Name: Label2
-      Type: Label
-      Children:
-      - Name: Text
-        Type: BaseDataVariableType
-        DataType: LocalizedText
-        ModellingRule: Optional
-        Value: {"LocaleId":"en-US","Text":"Pump Speed Ref"}
-      - Name: LeftMargin
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 507.0
-      - Name: TopMargin
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 146.0
-      - Name: Width
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 72.0
-      - Name: Height
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 19.0
     - Name: Label3
       Type: Label
       Children:
@@ -6935,17 +6777,17 @@ Children:
         Type: BaseDataVariableType
         DataType: LocalizedText
         ModellingRule: Optional
-        Value: {"LocaleId":"en-US","Text":"Tank Level PV"}
+        Value: {"LocaleId":"en-US","Text":"Tank Level"}
       - Name: LeftMargin
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 254.0
+        Value: 90.0
       - Name: TopMargin
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 296.0
+        Value: 31.0
       - Name: Width
         Type: BaseVariableType
         DataType: Size
@@ -6962,12 +6804,11 @@ Children:
       - Name: Value
         Type: BaseDataVariableType
         DataType: Double
-        Value: 0.0
         Children:
         - Name: DynamicLink
           Type: DynamicLink
           DataType: NodePath
-          Value: "/Objects/Optix_Compact_7__SPC/CommDrivers/MicroControllerDriver1/ML870DNP3/Tags/Optix_Water_Level_CMD"
+          Value: "/Objects/Optix_Compact_7__SPC/CommDrivers/RAEtherNet_IPDriver1/L310ERNSE/Tags/Program&:Pump_Control/Tank_Value_Man_Req"
           Children:
           - Name: Mode
             Type: BaseVariableType
@@ -6983,12 +6824,12 @@ Children:
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 199.0
+        Value: 170.0
       - Name: TopMargin
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 211.0
+        Value: 410.0
       - Name: Height
         Type: BaseVariableType
         DataType: Size
@@ -7004,6 +6845,21 @@ Children:
         DataType: String
         ModellingRule: Optional
         Value: "Default"
+      - Name: Increment
+        Type: BaseDataVariableType
+        DataType: Double
+        ModellingRule: Optional
+        Value: 0.01
+      - Name: MinValue
+        Type: BaseDataVariableType
+        DataType: Double
+        ModellingRule: Optional
+        Value: 0.01
+      - Name: MaxValue
+        Type: BaseDataVariableType
+        DataType: Double
+        ModellingRule: Optional
+        Value: 0.5
     - Name: Label4
       Type: Label
       Children:
@@ -7011,27 +6867,1153 @@ Children:
         Type: BaseDataVariableType
         DataType: LocalizedText
         ModellingRule: Optional
-        Value: {"LocaleId":"en-US","Text":"Tank Level SP"}
+        Value: {"LocaleId":"en-US","Text":"Tank Level Manual Req = 0.00 - 0.50"}
       - Name: LeftMargin
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 255.0
+        Value: 168.0
       - Name: TopMargin
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 171.0
+        Value: 381.0
       - Name: Width
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 72.0
+        Value: 212.0
       - Name: Height
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
         Value: 19.0
+    - Name: Rectangle1
+      Type: Rectangle
+      Children:
+      - Name: Width
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 160.0
+      - Name: Height
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 290.0
+      - Name: LeftMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 520.0
+      - Name: TopMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+      - Name: Label1
+        Type: Label
+        Children:
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"Fault"}
+        - Name: LeftMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 6.0
+        - Name: TopMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 250.0
+        - Name: Height
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 17.0
+        - Name: Width
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 73.0
+        - Name: TextColor
+          Type: BaseDataVariableType
+          DataType: Color
+          ModellingRule: Optional
+          Value: "#ffffff"
+      - Name: Label2
+        Type: Label
+        Children:
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"Available"}
+        - Name: LeftMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 7.0
+        - Name: TopMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 200.0
+        - Name: Height
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 17.0
+        - Name: Width
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 73.0
+        - Name: TextColor
+          Type: BaseDataVariableType
+          DataType: Color
+          ModellingRule: Optional
+          Value: "#ffffff"
+      - Name: Label3
+        Type: Label
+        Children:
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"Healthy"}
+        - Name: LeftMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 6.0
+        - Name: TopMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 147.0
+        - Name: Height
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 17.0
+        - Name: Width
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 73.0
+        - Name: TextColor
+          Type: BaseDataVariableType
+          DataType: Color
+          ModellingRule: Optional
+          Value: "#ffffff"
+      - Name: Label4
+        Type: Label
+        Children:
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"Run"}
+        - Name: LeftMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 6.0
+        - Name: TopMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 88.0
+        - Name: Height
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 17.0
+        - Name: Width
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 73.0
+        - Name: TextColor
+          Type: BaseDataVariableType
+          DataType: Color
+          ModellingRule: Optional
+          Value: "#ffffff"
+      - Name: LED1
+        Type: Led
+        Children:
+        - Name: Active
+          Type: BaseDataVariableType
+          DataType: Boolean
+        - Name: Width
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 30.0
+        - Name: Height
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 30.0
+        - Name: Color
+          Type: BaseDataVariableType
+          DataType: Color
+          Value: "#0fafff"
+          Children:
+          - Name: ConditionalConverter1
+            Type: ConditionalConverter
+            Children:
+            - Name: Condition
+              Type: BaseDataVariableType
+              DataType: Boolean
+              ReferenceType: HasSource
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "/Objects/Optix_Compact_7__SPC/CommDrivers/RAEtherNet_IPDriver1/L310ERNSE/Tags/Program&:Pump_Control/Pump1_Fault"
+            - Name: TrueValue
+              Type: BaseDataVariableType
+              DataType: Color
+              ReferenceType: HasParameter
+              ModellingRule: Optional
+              Value: "#58f90e"
+            - Name: FalseValue
+              Type: BaseDataVariableType
+              DataType: Color
+              ReferenceType: HasParameter
+              ModellingRule: Optional
+              Value: "#eb001b"
+        - Name: HorizontalAlignment
+          Type: BaseVariableType
+          DataType: HorizontalAlignment
+          ModellingRule: Optional
+          Value: 2
+        - Name: VerticalAlignment
+          Type: BaseVariableType
+          DataType: VerticalAlignment
+          ModellingRule: Optional
+          Value: 2
+        - Name: TopMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 220.0
+        - Name: BottomMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+      - Name: LED2
+        Type: Led
+        Children:
+        - Name: Active
+          Type: BaseDataVariableType
+          DataType: Boolean
+        - Name: Width
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 30.0
+        - Name: Height
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 30.0
+        - Name: Color
+          Type: BaseDataVariableType
+          DataType: Color
+          Value: "#0fafff"
+          Children:
+          - Name: ConditionalConverter1
+            Type: ConditionalConverter
+            Children:
+            - Name: Condition
+              Type: BaseDataVariableType
+              DataType: Boolean
+              ReferenceType: HasSource
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "/Objects/Optix_Compact_7__SPC/CommDrivers/RAEtherNet_IPDriver1/L310ERNSE/Tags/Program&:Pump_Control/Pump1_Available"
+            - Name: TrueValue
+              Type: BaseDataVariableType
+              DataType: Color
+              ReferenceType: HasParameter
+              ModellingRule: Optional
+              Value: "#58f90e"
+            - Name: FalseValue
+              Type: BaseDataVariableType
+              DataType: Color
+              ReferenceType: HasParameter
+              ModellingRule: Optional
+              Value: "#0fafff"
+        - Name: HorizontalAlignment
+          Type: BaseVariableType
+          DataType: HorizontalAlignment
+          ModellingRule: Optional
+          Value: 2
+        - Name: VerticalAlignment
+          Type: BaseVariableType
+          DataType: VerticalAlignment
+          ModellingRule: Optional
+          Value: 2
+        - Name: TopMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 120.0
+        - Name: BottomMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+      - Name: LED3
+        Type: Led
+        Children:
+        - Name: Active
+          Type: BaseDataVariableType
+          DataType: Boolean
+        - Name: Width
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 30.0
+        - Name: Height
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 30.0
+        - Name: Color
+          Type: BaseDataVariableType
+          DataType: Color
+          Value: "#0fafff"
+          Children:
+          - Name: ConditionalConverter1
+            Type: ConditionalConverter
+            Children:
+            - Name: Condition
+              Type: BaseDataVariableType
+              DataType: Boolean
+              ReferenceType: HasSource
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "/Objects/Optix_Compact_7__SPC/CommDrivers/RAEtherNet_IPDriver1/L310ERNSE/Tags/Program&:Pump_Control/Pump1_Healthy"
+            - Name: TrueValue
+              Type: BaseDataVariableType
+              DataType: Color
+              ReferenceType: HasParameter
+              ModellingRule: Optional
+              Value: "#58f90e"
+            - Name: FalseValue
+              Type: BaseDataVariableType
+              DataType: Color
+              ReferenceType: HasParameter
+              ModellingRule: Optional
+              Value: "#0fafff"
+        - Name: HorizontalAlignment
+          Type: BaseVariableType
+          DataType: HorizontalAlignment
+          ModellingRule: Optional
+          Value: 2
+        - Name: VerticalAlignment
+          Type: BaseVariableType
+          DataType: VerticalAlignment
+          ModellingRule: Optional
+          Value: 2
+        - Name: TopMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 20.0
+        - Name: BottomMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+      - Name: LED4
+        Type: Led
+        Children:
+        - Name: Active
+          Type: BaseDataVariableType
+          DataType: Boolean
+        - Name: Width
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 30.0
+        - Name: Height
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 30.0
+        - Name: Color
+          Type: BaseDataVariableType
+          DataType: Color
+          Value: "#0fafff"
+          Children:
+          - Name: ConditionalConverter1
+            Type: ConditionalConverter
+            Children:
+            - Name: Condition
+              Type: BaseDataVariableType
+              DataType: Boolean
+              ReferenceType: HasSource
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "/Objects/Optix_Compact_7__SPC/CommDrivers/RAEtherNet_IPDriver1/L310ERNSE/Tags/Program&:Pump_Control/Pump1_RunCmd"
+            - Name: TrueValue
+              Type: BaseDataVariableType
+              DataType: Color
+              ReferenceType: HasParameter
+              ModellingRule: Optional
+              Value: "#58f90e"
+            - Name: FalseValue
+              Type: BaseDataVariableType
+              DataType: Color
+              ReferenceType: HasParameter
+              ModellingRule: Optional
+              Value: "#0fafff"
+        - Name: HorizontalAlignment
+          Type: BaseVariableType
+          DataType: HorizontalAlignment
+          ModellingRule: Optional
+          Value: 2
+        - Name: VerticalAlignment
+          Type: BaseVariableType
+          DataType: VerticalAlignment
+          ModellingRule: Optional
+          Value: 2
+        - Name: TopMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: -100.0
+        - Name: BottomMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+      - Name: Label5
+        Type: Label
+        Children:
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"Pump 1"}
+        - Name: LeftMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 50.0
+        - Name: TopMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 33.0
+        - Name: Height
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 17.0
+        - Name: Width
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 73.0
+        - Name: TextColor
+          Type: BaseDataVariableType
+          DataType: Color
+          ModellingRule: Optional
+          Value: "#ffffff"
+        - Name: FontFamily
+          Type: BaseDataVariableType
+          DataType: Font
+          ModellingRule: Optional
+        - Name: FontSize
+          Type: BaseDataVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 16.0
+      - Name: FillColor
+        Type: BaseDataVariableType
+        DataType: Color
+        ModellingRule: Optional
+        Value: "#3b3b3b"
+    - Name: Rectangle2
+      Type: Rectangle
+      Children:
+      - Name: Width
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 160.0
+      - Name: Height
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 290.0
+      - Name: LeftMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 360.0
+      - Name: TopMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+      - Name: Label1
+        Type: Label
+        Children:
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"Fault"}
+        - Name: LeftMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 6.0
+        - Name: TopMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 250.0
+        - Name: Height
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 17.0
+        - Name: Width
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 73.0
+        - Name: TextColor
+          Type: BaseDataVariableType
+          DataType: Color
+          ModellingRule: Optional
+          Value: "#ffffff"
+      - Name: Label2
+        Type: Label
+        Children:
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"Available"}
+        - Name: LeftMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 7.0
+        - Name: TopMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 200.0
+        - Name: Height
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 17.0
+        - Name: Width
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 73.0
+        - Name: TextColor
+          Type: BaseDataVariableType
+          DataType: Color
+          ModellingRule: Optional
+          Value: "#ffffff"
+      - Name: Label3
+        Type: Label
+        Children:
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"Healthy"}
+        - Name: LeftMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 6.0
+        - Name: TopMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 147.0
+        - Name: Height
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 17.0
+        - Name: Width
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 73.0
+        - Name: TextColor
+          Type: BaseDataVariableType
+          DataType: Color
+          ModellingRule: Optional
+          Value: "#ffffff"
+      - Name: Label4
+        Type: Label
+        Children:
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"Run"}
+        - Name: LeftMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 6.0
+        - Name: TopMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 88.0
+        - Name: Height
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 17.0
+        - Name: Width
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 73.0
+        - Name: TextColor
+          Type: BaseDataVariableType
+          DataType: Color
+          ModellingRule: Optional
+          Value: "#ffffff"
+      - Name: LED1
+        Type: Led
+        Children:
+        - Name: Active
+          Type: BaseDataVariableType
+          DataType: Boolean
+        - Name: Width
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 30.0
+        - Name: Height
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 30.0
+        - Name: Color
+          Type: BaseDataVariableType
+          DataType: Color
+          Value: "#0fafff"
+          Children:
+          - Name: ConditionalConverter1
+            Type: ConditionalConverter
+            Children:
+            - Name: Condition
+              Type: BaseDataVariableType
+              DataType: Boolean
+              ReferenceType: HasSource
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "/Objects/Optix_Compact_7__SPC/CommDrivers/RAEtherNet_IPDriver1/L310ERNSE/Tags/Program&:Pump_Control/Pump2_Fault"
+            - Name: TrueValue
+              Type: BaseDataVariableType
+              DataType: Color
+              ReferenceType: HasParameter
+              ModellingRule: Optional
+              Value: "#58f90e"
+            - Name: FalseValue
+              Type: BaseDataVariableType
+              DataType: Color
+              ReferenceType: HasParameter
+              ModellingRule: Optional
+              Value: "#eb001b"
+        - Name: HorizontalAlignment
+          Type: BaseVariableType
+          DataType: HorizontalAlignment
+          ModellingRule: Optional
+          Value: 2
+        - Name: VerticalAlignment
+          Type: BaseVariableType
+          DataType: VerticalAlignment
+          ModellingRule: Optional
+          Value: 2
+        - Name: TopMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 220.0
+        - Name: BottomMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+      - Name: LED2
+        Type: Led
+        Children:
+        - Name: Active
+          Type: BaseDataVariableType
+          DataType: Boolean
+        - Name: Width
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 30.0
+        - Name: Height
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 30.0
+        - Name: Color
+          Type: BaseDataVariableType
+          DataType: Color
+          Value: "#0fafff"
+          Children:
+          - Name: ConditionalConverter1
+            Type: ConditionalConverter
+            Children:
+            - Name: Condition
+              Type: BaseDataVariableType
+              DataType: Boolean
+              ReferenceType: HasSource
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "/Objects/Optix_Compact_7__SPC/CommDrivers/RAEtherNet_IPDriver1/L310ERNSE/Tags/Program&:Pump_Control/Pump2_Available"
+            - Name: TrueValue
+              Type: BaseDataVariableType
+              DataType: Color
+              ReferenceType: HasParameter
+              ModellingRule: Optional
+              Value: "#58f90e"
+            - Name: FalseValue
+              Type: BaseDataVariableType
+              DataType: Color
+              ReferenceType: HasParameter
+              ModellingRule: Optional
+              Value: "#0fafff"
+        - Name: HorizontalAlignment
+          Type: BaseVariableType
+          DataType: HorizontalAlignment
+          ModellingRule: Optional
+          Value: 2
+        - Name: VerticalAlignment
+          Type: BaseVariableType
+          DataType: VerticalAlignment
+          ModellingRule: Optional
+          Value: 2
+        - Name: TopMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 120.0
+        - Name: BottomMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+      - Name: LED3
+        Type: Led
+        Children:
+        - Name: Active
+          Type: BaseDataVariableType
+          DataType: Boolean
+        - Name: Width
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 30.0
+        - Name: Height
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 30.0
+        - Name: Color
+          Type: BaseDataVariableType
+          DataType: Color
+          Value: "#0fafff"
+          Children:
+          - Name: ConditionalConverter1
+            Type: ConditionalConverter
+            Children:
+            - Name: Condition
+              Type: BaseDataVariableType
+              DataType: Boolean
+              ReferenceType: HasSource
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "/Objects/Optix_Compact_7__SPC/CommDrivers/RAEtherNet_IPDriver1/L310ERNSE/Tags/Program&:Pump_Control/Pump2_Healthy"
+            - Name: TrueValue
+              Type: BaseDataVariableType
+              DataType: Color
+              ReferenceType: HasParameter
+              ModellingRule: Optional
+              Value: "#58f90e"
+            - Name: FalseValue
+              Type: BaseDataVariableType
+              DataType: Color
+              ReferenceType: HasParameter
+              ModellingRule: Optional
+              Value: "#0fafff"
+        - Name: HorizontalAlignment
+          Type: BaseVariableType
+          DataType: HorizontalAlignment
+          ModellingRule: Optional
+          Value: 2
+        - Name: VerticalAlignment
+          Type: BaseVariableType
+          DataType: VerticalAlignment
+          ModellingRule: Optional
+          Value: 2
+        - Name: TopMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 20.0
+        - Name: BottomMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+      - Name: LED4
+        Type: Led
+        Children:
+        - Name: Active
+          Type: BaseDataVariableType
+          DataType: Boolean
+        - Name: Width
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 30.0
+        - Name: Height
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 30.0
+        - Name: Color
+          Type: BaseDataVariableType
+          DataType: Color
+          Value: "#0fafff"
+          Children:
+          - Name: ConditionalConverter1
+            Type: ConditionalConverter
+            Children:
+            - Name: Condition
+              Type: BaseDataVariableType
+              DataType: Boolean
+              ReferenceType: HasSource
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "/Objects/Optix_Compact_7__SPC/CommDrivers/RAEtherNet_IPDriver1/L310ERNSE/Tags/Program&:Pump_Control/Pump2_RunCmd"
+            - Name: TrueValue
+              Type: BaseDataVariableType
+              DataType: Color
+              ReferenceType: HasParameter
+              ModellingRule: Optional
+              Value: "#58f90e"
+            - Name: FalseValue
+              Type: BaseDataVariableType
+              DataType: Color
+              ReferenceType: HasParameter
+              ModellingRule: Optional
+              Value: "#0fafff"
+        - Name: HorizontalAlignment
+          Type: BaseVariableType
+          DataType: HorizontalAlignment
+          ModellingRule: Optional
+          Value: 2
+        - Name: VerticalAlignment
+          Type: BaseVariableType
+          DataType: VerticalAlignment
+          ModellingRule: Optional
+          Value: 2
+        - Name: TopMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: -100.0
+        - Name: BottomMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+      - Name: Label5
+        Type: Label
+        Children:
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"Pump 2"}
+        - Name: LeftMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 50.0
+        - Name: TopMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 33.0
+        - Name: Height
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 17.0
+        - Name: Width
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 73.0
+        - Name: TextColor
+          Type: BaseDataVariableType
+          DataType: Color
+          ModellingRule: Optional
+          Value: "#ffffff"
+        - Name: FontFamily
+          Type: BaseDataVariableType
+          DataType: Font
+          ModellingRule: Optional
+        - Name: FontSize
+          Type: BaseDataVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 16.0
+      - Name: FillColor
+        Type: BaseDataVariableType
+        DataType: Color
+        ModellingRule: Optional
+        Value: "#3b3b3b"
+      - Name: LED5
+        Type: Led
+        Children:
+        - Name: Active
+          Type: BaseDataVariableType
+          DataType: Boolean
+        - Name: Width
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 30.0
+        - Name: Height
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 30.0
+        - Name: Color
+          Type: BaseDataVariableType
+          DataType: Color
+          Value: "#0fafff"
+          Children:
+          - Name: ConditionalConverter1
+            Type: ConditionalConverter
+            Children:
+            - Name: Condition
+              Type: BaseDataVariableType
+              DataType: Boolean
+              ReferenceType: HasSource
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "/Objects/Optix_Compact_7__SPC/CommDrivers/RAEtherNet_IPDriver1/L310ERNSE/Tags/Program&:Pump_Control/Pump_Enable"
+            - Name: TrueValue
+              Type: BaseDataVariableType
+              DataType: Color
+              ReferenceType: HasParameter
+              ModellingRule: Optional
+              Value: "#58f90e"
+            - Name: FalseValue
+              Type: BaseDataVariableType
+              DataType: Color
+              ReferenceType: HasParameter
+              ModellingRule: Optional
+              Value: "#0fafff"
+        - Name: HorizontalAlignment
+          Type: BaseVariableType
+          DataType: HorizontalAlignment
+          ModellingRule: Optional
+          Value: 2
+        - Name: VerticalAlignment
+          Type: BaseVariableType
+          DataType: VerticalAlignment
+          ModellingRule: Optional
+          Value: 2
+        - Name: TopMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 340.0
+        - Name: BottomMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+        - Name: LeftMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 170.0
+        - Name: RightMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+      - Name: LED6
+        Type: Led
+        Children:
+        - Name: Active
+          Type: BaseDataVariableType
+          DataType: Boolean
+        - Name: Width
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 30.0
+        - Name: Height
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 30.0
+        - Name: Color
+          Type: BaseDataVariableType
+          DataType: Color
+          Value: "#0fafff"
+          Children:
+          - Name: ConditionalConverter1
+            Type: ConditionalConverter
+            Children:
+            - Name: Condition
+              Type: BaseDataVariableType
+              DataType: Boolean
+              ReferenceType: HasSource
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "/Objects/Optix_Compact_7__SPC/CommDrivers/RAEtherNet_IPDriver1/L310ERNSE/Tags/Program&:Pump_Control/NoPumpsAvailable"
+            - Name: TrueValue
+              Type: BaseDataVariableType
+              DataType: Color
+              ReferenceType: HasParameter
+              ModellingRule: Optional
+              Value: "#eb001b"
+            - Name: FalseValue
+              Type: BaseDataVariableType
+              DataType: Color
+              ReferenceType: HasParameter
+              ModellingRule: Optional
+              Value: "#4af023"
+        - Name: HorizontalAlignment
+          Type: BaseVariableType
+          DataType: HorizontalAlignment
+          ModellingRule: Optional
+          Value: 2
+        - Name: VerticalAlignment
+          Type: BaseVariableType
+          DataType: VerticalAlignment
+          ModellingRule: Optional
+          Value: 2
+        - Name: TopMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 420.0
+        - Name: BottomMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+        - Name: LeftMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 170.0
+        - Name: RightMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+    - Name: Label1
+      Type: Label
+      Children:
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ModellingRule: Optional
+        Value: {"LocaleId":"en-US","Text":"Enabled"}
+      - Name: LeftMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 407.0
+      - Name: TopMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 310.0
+      - Name: Height
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 17.0
+      - Name: Width
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 73.0
+      - Name: TextColor
+        Type: BaseDataVariableType
+        DataType: Color
+        ModellingRule: Optional
+        Value: "#ffffff"
+    - Name: Label2
+      Type: Label
+      Children:
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ModellingRule: Optional
+        Value: {"LocaleId":"en-US","Text":"Pumps Unavailable"}
+      - Name: LeftMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 390.0
+      - Name: TopMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 343.0
+      - Name: Height
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 17.0
+      - Name: Width
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 73.0
+      - Name: TextColor
+        Type: BaseDataVariableType
+        DataType: Color
+        ModellingRule: Optional
+        Value: "#ffffff"
 - Name: Power
   Id: g=2c26171a2be2dba378ef7b75eafca162
   Supertype: Panel
@@ -7060,11 +8042,6 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 480.0
-    - Name: BorderThickness
-      Type: BaseDataVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 1.0
     - Name: FillColor
       Type: BaseDataVariableType
       DataType: Color
@@ -7176,7 +8153,7 @@ Children:
       - Name: Window
         Type: BaseDataVariableType
         DataType: Duration
-        Value: "0:00:01:0.0000000"
+        Value: "0:00:01:00.0000000"
       - Name: Interactive
         Type: BaseDataVariableType
         DataType: Boolean
@@ -7184,7 +8161,6 @@ Children:
       - Name: Time
         Type: BaseDataVariableType
         DataType: DateTime
-        Value: "1601-01-01T00:00:00.0000000"
       - Name: SnapPosition
         Type: BaseDataVariableType
         DataType: SnapPositionEnum
@@ -7204,7 +8180,6 @@ Children:
       - Name: AutoScale
         Type: BaseDataVariableType
         DataType: Boolean
-        Value: false
       - Name: Interactive
         Type: BaseDataVariableType
         DataType: Boolean
@@ -7212,7 +8187,6 @@ Children:
       - Name: Position
         Type: BaseDataVariableType
         DataType: HorizontalPositionEnum
-        Value: 0
     - Name: LegendVisible
       Type: BaseDataVariableType
       DataType: Boolean
@@ -7255,11 +8229,9 @@ Children:
       - Name: ItemKind
         Type: PropertyType
         DataType: NodeId
-        Value: {"IdType":0,"Id":0,"Namespace":-1}
       - Name: Kind
         Type: PropertyType
         DataType: NodeId
-        Value: {"IdType":0,"Id":0,"Namespace":-1}
     - Name: VerticalAlignment
       Type: BaseVariableType
       DataType: VerticalAlignment
@@ -7345,42 +8317,33 @@ Children:
               DataType: UInt32
               Description: {"NamespaceIndex":3,"TextId":"ToggleArrayIndexDescription"}
               ValueRank: ScalarOrOneDimension
-              Value: 0
       - Name: EventArguments
         Type: MouseClickEvent
         Children:
         - Name: EventId
           Type: PropertyType
           DataType: ByteString
-          Value: ""
         - Name: EventType
           Type: PropertyType
           DataType: NodeId
-          Value: {"IdType":0,"Id":0,"Namespace":-1}
         - Name: SourceNode
           Type: PropertyType
           DataType: NodeId
-          Value: {"IdType":0,"Id":0,"Namespace":-1}
         - Name: SourceName
           Type: PropertyType
           DataType: String
-          Value: ""
         - Name: Time
           Type: PropertyType
           DataType: UtcTime
-          Value: "1601-01-01T00:00:00.0000000"
         - Name: ReceiveTime
           Type: PropertyType
           DataType: UtcTime
-          Value: "1601-01-01T00:00:00.0000000"
         - Name: Message
           Type: PropertyType
           DataType: LocalizedText
-          Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
         - Name: Severity
           Type: PropertyType
           DataType: UInt16
-          Value: 0
     - Name: VerticalAlignment
       Type: BaseVariableType
       DataType: VerticalAlignment
@@ -7410,7 +8373,6 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 0.0
   - Name: HistogramChart1
     Type: HistogramChart
     Children:
@@ -7426,11 +8388,9 @@ Children:
       - Name: Kind
         Type: PropertyType
         DataType: NodeId
-        Value: {"IdType":0,"Id":0,"Namespace":-1}
     - Name: Label
       Type: BaseDataVariableType
       DataType: LocalizedText
-      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
       Children:
       - Name: DynamicLink
         Type: DynamicLink
@@ -7439,7 +8399,6 @@ Children:
     - Name: Value
       Type: BaseDataVariableType
       DataType: Double
-      Value: 0.0
       Children:
       - Name: DynamicLink
         Type: DynamicLink
@@ -7451,7 +8410,6 @@ Children:
     - Name: Item
       Type: Alias
       DataType: NodeId
-      Value: {"IdType":0,"Id":0,"Namespace":-1}
       Children:
       - Name: Kind
         Type: PropertyType
@@ -7491,7 +8449,6 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 0.0
     - Name: BottomMargin
       Type: BaseVariableType
       DataType: Size
@@ -7529,7 +8486,6 @@ Children:
       Type: BaseVariableType
       DataType: VerticalAlignment
       ModellingRule: Optional
-      Value: 0
     - Name: RightMargin
       Type: BaseVariableType
       DataType: Size
@@ -7583,7 +8539,6 @@ Children:
               Description: {"NamespaceIndex":25,"TextId":"QueryHeaderDescription"}
               ValueRank: OneDimension
               ArrayDimensions: [0]
-              Value: []
             - Name: ResultSet
               Type: BaseDataVariableType
               DataType: BaseDataType
@@ -7596,35 +8551,27 @@ Children:
         - Name: EventId
           Type: PropertyType
           DataType: ByteString
-          Value: ""
         - Name: EventType
           Type: PropertyType
           DataType: NodeId
-          Value: {"IdType":0,"Id":0,"Namespace":-1}
         - Name: SourceNode
           Type: PropertyType
           DataType: NodeId
-          Value: {"IdType":0,"Id":0,"Namespace":-1}
         - Name: SourceName
           Type: PropertyType
           DataType: String
-          Value: ""
         - Name: Time
           Type: PropertyType
           DataType: UtcTime
-          Value: "1601-01-01T00:00:00.0000000"
         - Name: ReceiveTime
           Type: PropertyType
           DataType: UtcTime
-          Value: "1601-01-01T00:00:00.0000000"
         - Name: Message
           Type: PropertyType
           DataType: LocalizedText
-          Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
         - Name: Severity
           Type: PropertyType
           DataType: UInt16
-          Value: 0
     - Name: TopMargin
       Type: BaseVariableType
       DataType: Size
@@ -7634,7 +8581,347 @@ Children:
     Type: BaseVariableType
     DataType: Size
     ModellingRule: Optional
-    Value: 0.0
+- Name: FTEM_Trend
+  Id: g=6367445193d63f316f629570ad4422bf
+  Supertype: Panel
+  ReferenceType: HasComponent
+  Children:
+  - Name: Width
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 680.0
+  - Name: Height
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 480.0
+  - Name: TopMargin
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+  - Name: Rectangle1
+    Type: Rectangle
+    Children:
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 680.0
+    - Name: Height
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 480.0
+    - Name: FillColor
+      Type: BaseDataVariableType
+      DataType: Color
+      ModellingRule: Optional
+      Value: "#3b3b3b"
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+    - Name: Label1
+      Type: Label
+      Children:
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ModellingRule: Optional
+        Value: {"LocaleId":"en-US","Text":"Room Temp"}
+      - Name: LeftMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 88.0
+      - Name: TopMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 31.0
+      - Name: Width
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 72.0
+      - Name: Height
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 19.0
+    - Name: Label3
+      Type: Label
+      Children:
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ModellingRule: Optional
+        Value: {"LocaleId":"en-US","Text":"Distance to Full"}
+      - Name: LeftMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 558.0
+      - Name: TopMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 30.0
+      - Name: Width
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 72.0
+      - Name: Height
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 19.0
+    - Name: Trend1
+      Type: Trend
+      Children:
+      - Name: Pens
+        Type: BaseObjectType
+        Children:
+        - Name: Water
+          Type: TrendPen
+          DataType: BaseDataType
+          Children:
+          - Name: Thickness
+            Type: BaseDataVariableType
+            DataType: Size
+            Value: -1.0
+          - Name: Enabled
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: true
+          - Name: Thresholds
+            Type: BaseObjectType
+          - Name: Color
+            Type: BaseDataVariableType
+            DataType: Color
+            ModellingRule: Optional
+            Value: "#1b5583"
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../Model/VariablesToLog/Water/LastValue"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              ModellingRule: Optional
+              Value: 2
+        - Name: Air
+          Type: TrendPen
+          DataType: BaseDataType
+          Children:
+          - Name: Thickness
+            Type: BaseDataVariableType
+            DataType: Size
+            Value: -1.0
+          - Name: Enabled
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: true
+          - Name: Thresholds
+            Type: BaseObjectType
+          - Name: Color
+            Type: BaseDataVariableType
+            DataType: Color
+            ModellingRule: Optional
+            Value: "#f3da08"
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../Model/VariablesToLog/Air/LastValue"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              ModellingRule: Optional
+              Value: 2
+        - Name: Gas
+          Type: TrendPen
+          DataType: BaseDataType
+          Children:
+          - Name: Thickness
+            Type: BaseDataVariableType
+            DataType: Size
+            Value: -1.0
+          - Name: Enabled
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: true
+          - Name: Thresholds
+            Type: BaseObjectType
+          - Name: Color
+            Type: BaseDataVariableType
+            DataType: Color
+            ModellingRule: Optional
+            Value: "#ff7514"
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../Model/VariablesToLog/Gas/LastValue"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              ModellingRule: Optional
+              Value: 2
+        - Name: KWHRS
+          Type: TrendPen
+          DataType: BaseDataType
+          Children:
+          - Name: Thickness
+            Type: BaseDataVariableType
+            DataType: Size
+            Value: -1.0
+          - Name: Enabled
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: true
+          - Name: Thresholds
+            Type: BaseObjectType
+          - Name: Color
+            Type: BaseDataVariableType
+            DataType: Color
+            ModellingRule: Optional
+            Value: "#7d7f7d"
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../Model/VariablesToLog/KWHRS/LastValue"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              ModellingRule: Optional
+              Value: 2
+        - Name: Steam
+          Type: TrendPen
+          DataType: BaseDataType
+          Children:
+          - Name: Thickness
+            Type: BaseDataVariableType
+            DataType: Size
+            Value: -1.0
+          - Name: Enabled
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: true
+          - Name: Thresholds
+            Type: BaseObjectType
+          - Name: Color
+            Type: BaseDataVariableType
+            DataType: Color
+            ModellingRule: Optional
+            Value: "#4c9141"
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../Model/VariablesToLog/Steam/LastValue"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              ModellingRule: Optional
+              Value: 2
+      - Class: Reference
+        Target: ns=5;i=1129
+        Direction: Forward
+      - Name: XAxis
+        Type: DateTimeAxis
+        Children:
+        - Name: Follow
+          Type: BaseDataVariableType
+          DataType: Boolean
+          Value: true
+        - Name: Window
+          Type: BaseDataVariableType
+          DataType: Duration
+          Value: "0:00:01:00.0000000"
+        - Name: Interactive
+          Type: BaseDataVariableType
+          DataType: Boolean
+          Value: true
+        - Name: Time
+          Type: BaseDataVariableType
+          DataType: DateTime
+      - Name: YAxis
+        Type: ValueAxis
+        Children:
+        - Name: Position
+          Type: BaseDataVariableType
+          DataType: HorizontalPositionEnum
+        - Name: MinValue
+          Type: BaseDataVariableType
+          DataType: Size
+        - Name: MaxValue
+          Type: BaseDataVariableType
+          DataType: Size
+          Value: 100.0
+        - Name: AutoScale
+          Type: BaseDataVariableType
+          DataType: Boolean
+        - Name: Interactive
+          Type: BaseDataVariableType
+          DataType: Boolean
+          Value: true
+      - Name: LegendVisible
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Value: true
+      - Class: Reference
+        Target: ns=5;i=1201
+        Direction: Forward
+      - Name: TimeRanges
+        Type: BaseObjectType
+      - Class: Reference
+        Target: ns=5;i=1209
+        Direction: Forward
+      - Name: Width
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 600.0
+      - Name: Height
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 290.0
+      - Name: ReferenceTimeZone
+        Type: BaseDataVariableType
+        DataType: ReferenceTimeZone
+        ModellingRule: Optional
+        Value: 1
+      - Name: LeftMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 40.0
+      - Name: TopMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 140.0
+      - Name: Model
+        Type: NodePointer
+        DataType: NodeId
+        Value: "/Objects/Optix_Compact_7__SPC/Loggers/FTEM_Log"
+        Children:
+        - Name: ItemKind
+          Type: PropertyType
+          DataType: NodeId
+        - Name: Kind
+          Type: PropertyType
+          DataType: NodeId
 - Name: TS755_Control
   Id: g=fef43688f702af05ccfd60f073fb6d92
   Supertype: Popup
@@ -7666,11 +8953,6 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 400.0
-    - Name: BorderThickness
-      Type: BaseDataVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 1.0
     - Name: FillColor
       Type: BaseDataVariableType
       DataType: Color
@@ -7680,19 +8962,16 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 0.0
     - Name: TopMargin
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 0.0
     - Name: Label1
       Type: Label
       Children:
       - Name: Text
         Type: BaseDataVariableType
         DataType: LocalizedText
-        Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
         Children:
         - Name: StringFormatter1
           Type: StringFormatter
@@ -7736,7 +9015,6 @@ Children:
         Type: BaseVariableType
         DataType: HorizontalAlignment
         ModellingRule: Optional
-        Value: 0
       - Name: TextHorizontalAlignment
         Type: BaseVariableType
         DataType: TextHorizontalAlignment
@@ -7786,7 +9064,6 @@ Children:
             - Name: ns=3;ObjectPointer
               Type: NodePointer
               DataType: NodeId
-              Value: {"IdType":0,"Id":0,"Namespace":-1}
               Children:
               - Name: Kind
                 Type: PropertyType
@@ -7812,35 +9089,27 @@ Children:
           - Name: EventId
             Type: PropertyType
             DataType: ByteString
-            Value: ""
           - Name: EventType
             Type: PropertyType
             DataType: NodeId
-            Value: {"IdType":0,"Id":0,"Namespace":-1}
           - Name: SourceNode
             Type: PropertyType
             DataType: NodeId
-            Value: {"IdType":0,"Id":0,"Namespace":-1}
           - Name: SourceName
             Type: PropertyType
             DataType: String
-            Value: ""
           - Name: Time
             Type: PropertyType
             DataType: UtcTime
-            Value: "1601-01-01T00:00:00.0000000"
           - Name: ReceiveTime
             Type: PropertyType
             DataType: UtcTime
-            Value: "1601-01-01T00:00:00.0000000"
           - Name: Message
             Type: PropertyType
             DataType: LocalizedText
-            Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
           - Name: Severity
             Type: PropertyType
             DataType: UInt16
-            Value: 0
       - Name: Width
         Type: BaseVariableType
         DataType: Size
@@ -7904,7 +9173,7 @@ Children:
         - Name: Window
           Type: BaseDataVariableType
           DataType: Duration
-          Value: "0:00:01:0.0000000"
+          Value: "0:00:01:00.0000000"
         - Name: Interactive
           Type: BaseDataVariableType
           DataType: Boolean
@@ -7912,7 +9181,6 @@ Children:
         - Name: Time
           Type: BaseDataVariableType
           DataType: DateTime
-          Value: "1601-01-01T00:00:00.0000000"
         - Name: SnapPosition
           Type: BaseDataVariableType
           DataType: SnapPositionEnum
@@ -7932,7 +9200,6 @@ Children:
         - Name: AutoScale
           Type: BaseDataVariableType
           DataType: Boolean
-          Value: false
         - Name: Interactive
           Type: BaseDataVariableType
           DataType: Boolean
@@ -7940,7 +9207,6 @@ Children:
         - Name: Position
           Type: BaseDataVariableType
           DataType: HorizontalPositionEnum
-          Value: 0
       - Name: LegendVisible
         Type: BaseDataVariableType
         DataType: Boolean
@@ -7978,11 +9244,9 @@ Children:
         - Name: ItemKind
           Type: PropertyType
           DataType: NodeId
-          Value: {"IdType":0,"Id":0,"Namespace":-1}
         - Name: Kind
           Type: PropertyType
           DataType: NodeId
-          Value: {"IdType":0,"Id":0,"Namespace":-1}
       - Class: Reference
         Target: ns=5;i=1201
         Direction: Forward
@@ -7997,7 +9261,6 @@ Children:
       - Name: Active
         Type: BaseDataVariableType
         DataType: Boolean
-        Value: false
         Children:
         - Name: DynamicLink
           Type: DynamicLink
@@ -8035,7 +9298,6 @@ Children:
             Type: BaseDataVariableType
             DataType: Boolean
             ReferenceType: HasSource
-            Value: false
             Children:
             - Name: DynamicLink
               Type: DynamicLink
@@ -8066,7 +9328,6 @@ Children:
       - Name: Text
         Type: BaseDataVariableType
         DataType: LocalizedText
-        Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
         Children:
         - Name: ConditionalConverter1
           Type: ConditionalConverter
@@ -8075,7 +9336,6 @@ Children:
             Type: BaseDataVariableType
             DataType: Boolean
             ReferenceType: HasSource
-            Value: false
             Children:
             - Name: DynamicLink
               Type: DynamicLink
@@ -8109,7 +9369,6 @@ Children:
       - Name: Active
         Type: BaseDataVariableType
         DataType: Boolean
-        Value: false
         Children:
         - Name: DynamicLink
           Type: DynamicLink
@@ -8147,7 +9406,6 @@ Children:
             Type: BaseDataVariableType
             DataType: Boolean
             ReferenceType: HasSource
-            Value: false
             Children:
             - Name: DynamicLink
               Type: DynamicLink
@@ -8178,7 +9436,6 @@ Children:
       - Name: Text
         Type: BaseDataVariableType
         DataType: LocalizedText
-        Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
         Children:
         - Name: ConditionalConverter1
           Type: ConditionalConverter
@@ -8187,7 +9444,6 @@ Children:
             Type: BaseDataVariableType
             DataType: Boolean
             ReferenceType: HasSource
-            Value: false
             Children:
             - Name: DynamicLink
               Type: DynamicLink
@@ -8236,7 +9492,6 @@ Children:
             Type: BaseDataVariableType
             DataType: Boolean
             ReferenceType: HasSource
-            Value: false
             Children:
             - Name: DynamicLink
               Type: DynamicLink
@@ -8367,7 +9622,6 @@ Children:
         Type: BaseVariableType
         DataType: String
         ModellingRule: Optional
-        Value: ""
       - Name: EventHandler1
         Type: EventHandler
         Children:
@@ -8401,7 +9655,6 @@ Children:
                 Type: BaseDataVariableType
                 DataType: VariablePointer
                 Description: {"NamespaceIndex":3,"TextId":"VariableToModifyDescription"}
-                Value: {"IdType":0,"Id":0,"Namespace":-1}
                 Children:
                 - Name: DynamicLink
                   Type: DynamicLink
@@ -8433,42 +9686,33 @@ Children:
                 DataType: UInt32
                 Description: {"NamespaceIndex":3,"TextId":"ArrayIndexDescription"}
                 ValueRank: ScalarOrOneDimension
-                Value: 0
         - Name: EventArguments
           Type: MouseDownEvent
           Children:
           - Name: EventId
             Type: PropertyType
             DataType: ByteString
-            Value: ""
           - Name: EventType
             Type: PropertyType
             DataType: NodeId
-            Value: {"IdType":0,"Id":0,"Namespace":-1}
           - Name: SourceNode
             Type: PropertyType
             DataType: NodeId
-            Value: {"IdType":0,"Id":0,"Namespace":-1}
           - Name: SourceName
             Type: PropertyType
             DataType: String
-            Value: ""
           - Name: Time
             Type: PropertyType
             DataType: UtcTime
-            Value: "1601-01-01T00:00:00.0000000"
           - Name: ReceiveTime
             Type: PropertyType
             DataType: UtcTime
-            Value: "1601-01-01T00:00:00.0000000"
           - Name: Message
             Type: PropertyType
             DataType: LocalizedText
-            Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
           - Name: Severity
             Type: PropertyType
             DataType: UInt16
-            Value: 0
       - Name: EventHandler2
         Type: EventHandler
         Children:
@@ -8502,7 +9746,6 @@ Children:
                 Type: BaseDataVariableType
                 DataType: VariablePointer
                 Description: {"NamespaceIndex":3,"TextId":"VariableToModifyDescription"}
-                Value: {"IdType":0,"Id":0,"Namespace":-1}
                 Children:
                 - Name: DynamicLink
                   Type: DynamicLink
@@ -8534,46 +9777,36 @@ Children:
                 DataType: UInt32
                 Description: {"NamespaceIndex":3,"TextId":"ArrayIndexDescription"}
                 ValueRank: ScalarOrOneDimension
-                Value: 0
         - Name: EventArguments
           Type: MouseUpEvent
           Children:
           - Name: EventId
             Type: PropertyType
             DataType: ByteString
-            Value: ""
           - Name: EventType
             Type: PropertyType
             DataType: NodeId
-            Value: {"IdType":0,"Id":0,"Namespace":-1}
           - Name: SourceNode
             Type: PropertyType
             DataType: NodeId
-            Value: {"IdType":0,"Id":0,"Namespace":-1}
           - Name: SourceName
             Type: PropertyType
             DataType: String
-            Value: ""
           - Name: Time
             Type: PropertyType
             DataType: UtcTime
-            Value: "1601-01-01T00:00:00.0000000"
           - Name: ReceiveTime
             Type: PropertyType
             DataType: UtcTime
-            Value: "1601-01-01T00:00:00.0000000"
           - Name: Message
             Type: PropertyType
             DataType: LocalizedText
-            Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
           - Name: Severity
             Type: PropertyType
             DataType: UInt16
-            Value: 0
       - Name: VariableToBeModified
         Type: NodePointer
         DataType: NodeId
-        Value: {"IdType":0,"Id":0,"Namespace":-1}
         Children:
         - Name: Kind
           Type: PropertyType
@@ -8596,7 +9829,6 @@ Children:
       - Name: ValueWhenReleased
         Type: BaseDataVariableType
         DataType: Int32
-        Value: 0
       - Name: Width
         Type: BaseVariableType
         DataType: Size
@@ -8636,14 +9868,12 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 0.0
     - Name: LED3
       Type: Led
       Children:
       - Name: Active
         Type: BaseDataVariableType
         DataType: Boolean
-        Value: false
         Children:
         - Name: DynamicLink
           Type: DynamicLink
@@ -8681,7 +9911,6 @@ Children:
             Type: BaseDataVariableType
             DataType: Boolean
             ReferenceType: HasSource
-            Value: false
             Children:
             - Name: DynamicLink
               Type: DynamicLink
@@ -8712,7 +9941,6 @@ Children:
       - Name: Text
         Type: BaseDataVariableType
         DataType: LocalizedText
-        Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
         Children:
         - Name: ConditionalConverter1
           Type: ConditionalConverter
@@ -8721,7 +9949,6 @@ Children:
             Type: BaseDataVariableType
             DataType: Boolean
             ReferenceType: HasSource
-            Value: false
             Children:
             - Name: DynamicLink
               Type: DynamicLink
@@ -8777,7 +10004,6 @@ Children:
         Type: BaseVariableType
         DataType: String
         ModellingRule: Optional
-        Value: ""
       - Name: EventHandler1
         Type: EventHandler
         Children:
@@ -8811,7 +10037,6 @@ Children:
                 Type: BaseDataVariableType
                 DataType: VariablePointer
                 Description: {"NamespaceIndex":3,"TextId":"VariableToModifyDescription"}
-                Value: {"IdType":0,"Id":0,"Namespace":-1}
                 Children:
                 - Name: DynamicLink
                   Type: DynamicLink
@@ -8843,42 +10068,33 @@ Children:
                 DataType: UInt32
                 Description: {"NamespaceIndex":3,"TextId":"ArrayIndexDescription"}
                 ValueRank: ScalarOrOneDimension
-                Value: 0
         - Name: EventArguments
           Type: MouseDownEvent
           Children:
           - Name: EventId
             Type: PropertyType
             DataType: ByteString
-            Value: ""
           - Name: EventType
             Type: PropertyType
             DataType: NodeId
-            Value: {"IdType":0,"Id":0,"Namespace":-1}
           - Name: SourceNode
             Type: PropertyType
             DataType: NodeId
-            Value: {"IdType":0,"Id":0,"Namespace":-1}
           - Name: SourceName
             Type: PropertyType
             DataType: String
-            Value: ""
           - Name: Time
             Type: PropertyType
             DataType: UtcTime
-            Value: "1601-01-01T00:00:00.0000000"
           - Name: ReceiveTime
             Type: PropertyType
             DataType: UtcTime
-            Value: "1601-01-01T00:00:00.0000000"
           - Name: Message
             Type: PropertyType
             DataType: LocalizedText
-            Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
           - Name: Severity
             Type: PropertyType
             DataType: UInt16
-            Value: 0
       - Name: EventHandler2
         Type: EventHandler
         Children:
@@ -8912,7 +10128,6 @@ Children:
                 Type: BaseDataVariableType
                 DataType: VariablePointer
                 Description: {"NamespaceIndex":3,"TextId":"VariableToModifyDescription"}
-                Value: {"IdType":0,"Id":0,"Namespace":-1}
                 Children:
                 - Name: DynamicLink
                   Type: DynamicLink
@@ -8944,46 +10159,36 @@ Children:
                 DataType: UInt32
                 Description: {"NamespaceIndex":3,"TextId":"ArrayIndexDescription"}
                 ValueRank: ScalarOrOneDimension
-                Value: 0
         - Name: EventArguments
           Type: MouseUpEvent
           Children:
           - Name: EventId
             Type: PropertyType
             DataType: ByteString
-            Value: ""
           - Name: EventType
             Type: PropertyType
             DataType: NodeId
-            Value: {"IdType":0,"Id":0,"Namespace":-1}
           - Name: SourceNode
             Type: PropertyType
             DataType: NodeId
-            Value: {"IdType":0,"Id":0,"Namespace":-1}
           - Name: SourceName
             Type: PropertyType
             DataType: String
-            Value: ""
           - Name: Time
             Type: PropertyType
             DataType: UtcTime
-            Value: "1601-01-01T00:00:00.0000000"
           - Name: ReceiveTime
             Type: PropertyType
             DataType: UtcTime
-            Value: "1601-01-01T00:00:00.0000000"
           - Name: Message
             Type: PropertyType
             DataType: LocalizedText
-            Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
           - Name: Severity
             Type: PropertyType
             DataType: UInt16
-            Value: 0
       - Name: VariableToBeModified
         Type: NodePointer
         DataType: NodeId
-        Value: {"IdType":0,"Id":0,"Namespace":-1}
         Children:
         - Name: Kind
           Type: PropertyType
@@ -9006,7 +10211,6 @@ Children:
       - Name: ValueWhenReleased
         Type: BaseDataVariableType
         DataType: Int32
-        Value: 0
       - Name: Width
         Type: BaseVariableType
         DataType: Size
@@ -9055,7 +10259,6 @@ Children:
         Type: BaseVariableType
         DataType: String
         ModellingRule: Optional
-        Value: ""
       - Name: EventHandler1
         Type: EventHandler
         Children:
@@ -9089,7 +10292,6 @@ Children:
                 Type: BaseDataVariableType
                 DataType: VariablePointer
                 Description: {"NamespaceIndex":3,"TextId":"VariableToModifyDescription"}
-                Value: {"IdType":0,"Id":0,"Namespace":-1}
                 Children:
                 - Name: DynamicLink
                   Type: DynamicLink
@@ -9121,42 +10323,33 @@ Children:
                 DataType: UInt32
                 Description: {"NamespaceIndex":3,"TextId":"ArrayIndexDescription"}
                 ValueRank: ScalarOrOneDimension
-                Value: 0
         - Name: EventArguments
           Type: MouseDownEvent
           Children:
           - Name: EventId
             Type: PropertyType
             DataType: ByteString
-            Value: ""
           - Name: EventType
             Type: PropertyType
             DataType: NodeId
-            Value: {"IdType":0,"Id":0,"Namespace":-1}
           - Name: SourceNode
             Type: PropertyType
             DataType: NodeId
-            Value: {"IdType":0,"Id":0,"Namespace":-1}
           - Name: SourceName
             Type: PropertyType
             DataType: String
-            Value: ""
           - Name: Time
             Type: PropertyType
             DataType: UtcTime
-            Value: "1601-01-01T00:00:00.0000000"
           - Name: ReceiveTime
             Type: PropertyType
             DataType: UtcTime
-            Value: "1601-01-01T00:00:00.0000000"
           - Name: Message
             Type: PropertyType
             DataType: LocalizedText
-            Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
           - Name: Severity
             Type: PropertyType
             DataType: UInt16
-            Value: 0
       - Name: EventHandler2
         Type: EventHandler
         Children:
@@ -9190,7 +10383,6 @@ Children:
                 Type: BaseDataVariableType
                 DataType: VariablePointer
                 Description: {"NamespaceIndex":3,"TextId":"VariableToModifyDescription"}
-                Value: {"IdType":0,"Id":0,"Namespace":-1}
                 Children:
                 - Name: DynamicLink
                   Type: DynamicLink
@@ -9222,46 +10414,36 @@ Children:
                 DataType: UInt32
                 Description: {"NamespaceIndex":3,"TextId":"ArrayIndexDescription"}
                 ValueRank: ScalarOrOneDimension
-                Value: 0
         - Name: EventArguments
           Type: MouseUpEvent
           Children:
           - Name: EventId
             Type: PropertyType
             DataType: ByteString
-            Value: ""
           - Name: EventType
             Type: PropertyType
             DataType: NodeId
-            Value: {"IdType":0,"Id":0,"Namespace":-1}
           - Name: SourceNode
             Type: PropertyType
             DataType: NodeId
-            Value: {"IdType":0,"Id":0,"Namespace":-1}
           - Name: SourceName
             Type: PropertyType
             DataType: String
-            Value: ""
           - Name: Time
             Type: PropertyType
             DataType: UtcTime
-            Value: "1601-01-01T00:00:00.0000000"
           - Name: ReceiveTime
             Type: PropertyType
             DataType: UtcTime
-            Value: "1601-01-01T00:00:00.0000000"
           - Name: Message
             Type: PropertyType
             DataType: LocalizedText
-            Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
           - Name: Severity
             Type: PropertyType
             DataType: UInt16
-            Value: 0
       - Name: VariableToBeModified
         Type: NodePointer
         DataType: NodeId
-        Value: {"IdType":0,"Id":0,"Namespace":-1}
         Children:
         - Name: Kind
           Type: PropertyType
@@ -9284,7 +10466,6 @@ Children:
       - Name: ValueWhenReleased
         Type: BaseDataVariableType
         DataType: Int32
-        Value: 0
       - Name: Width
         Type: BaseVariableType
         DataType: Size
@@ -9338,7 +10519,6 @@ Children:
         Type: BaseVariableType
         DataType: String
         ModellingRule: Optional
-        Value: ""
       - Name: EventHandler1
         Type: EventHandler
         Children:
@@ -9372,7 +10552,6 @@ Children:
                 Type: BaseDataVariableType
                 DataType: VariablePointer
                 Description: {"NamespaceIndex":3,"TextId":"VariableToModifyDescription"}
-                Value: {"IdType":0,"Id":0,"Namespace":-1}
                 Children:
                 - Name: DynamicLink
                   Type: DynamicLink
@@ -9404,42 +10583,33 @@ Children:
                 DataType: UInt32
                 Description: {"NamespaceIndex":3,"TextId":"ArrayIndexDescription"}
                 ValueRank: ScalarOrOneDimension
-                Value: 0
         - Name: EventArguments
           Type: MouseDownEvent
           Children:
           - Name: EventId
             Type: PropertyType
             DataType: ByteString
-            Value: ""
           - Name: EventType
             Type: PropertyType
             DataType: NodeId
-            Value: {"IdType":0,"Id":0,"Namespace":-1}
           - Name: SourceNode
             Type: PropertyType
             DataType: NodeId
-            Value: {"IdType":0,"Id":0,"Namespace":-1}
           - Name: SourceName
             Type: PropertyType
             DataType: String
-            Value: ""
           - Name: Time
             Type: PropertyType
             DataType: UtcTime
-            Value: "1601-01-01T00:00:00.0000000"
           - Name: ReceiveTime
             Type: PropertyType
             DataType: UtcTime
-            Value: "1601-01-01T00:00:00.0000000"
           - Name: Message
             Type: PropertyType
             DataType: LocalizedText
-            Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
           - Name: Severity
             Type: PropertyType
             DataType: UInt16
-            Value: 0
       - Name: EventHandler2
         Type: EventHandler
         Children:
@@ -9473,7 +10643,6 @@ Children:
                 Type: BaseDataVariableType
                 DataType: VariablePointer
                 Description: {"NamespaceIndex":3,"TextId":"VariableToModifyDescription"}
-                Value: {"IdType":0,"Id":0,"Namespace":-1}
                 Children:
                 - Name: DynamicLink
                   Type: DynamicLink
@@ -9505,46 +10674,36 @@ Children:
                 DataType: UInt32
                 Description: {"NamespaceIndex":3,"TextId":"ArrayIndexDescription"}
                 ValueRank: ScalarOrOneDimension
-                Value: 0
         - Name: EventArguments
           Type: MouseUpEvent
           Children:
           - Name: EventId
             Type: PropertyType
             DataType: ByteString
-            Value: ""
           - Name: EventType
             Type: PropertyType
             DataType: NodeId
-            Value: {"IdType":0,"Id":0,"Namespace":-1}
           - Name: SourceNode
             Type: PropertyType
             DataType: NodeId
-            Value: {"IdType":0,"Id":0,"Namespace":-1}
           - Name: SourceName
             Type: PropertyType
             DataType: String
-            Value: ""
           - Name: Time
             Type: PropertyType
             DataType: UtcTime
-            Value: "1601-01-01T00:00:00.0000000"
           - Name: ReceiveTime
             Type: PropertyType
             DataType: UtcTime
-            Value: "1601-01-01T00:00:00.0000000"
           - Name: Message
             Type: PropertyType
             DataType: LocalizedText
-            Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
           - Name: Severity
             Type: PropertyType
             DataType: UInt16
-            Value: 0
       - Name: VariableToBeModified
         Type: NodePointer
         DataType: NodeId
-        Value: {"IdType":0,"Id":0,"Namespace":-1}
         Children:
         - Name: Kind
           Type: PropertyType
@@ -9567,7 +10726,6 @@ Children:
       - Name: ValueWhenReleased
         Type: BaseDataVariableType
         DataType: Int32
-        Value: 0
       - Name: Width
         Type: BaseVariableType
         DataType: Size
@@ -9582,7 +10740,6 @@ Children:
         Type: BaseDataVariableType
         DataType: ResourceUri
         ModellingRule: Optional
-        Value: ""
       - Name: ImageWidth
         Type: BaseDataVariableType
         DataType: Size
@@ -9602,7 +10759,6 @@ Children:
         Type: BaseDataVariableType
         DataType: Font
         ModellingRule: Optional
-        Value: ""
       - Name: FontSize
         Type: BaseDataVariableType
         DataType: Size
@@ -9631,7 +10787,6 @@ Children:
         Type: BaseVariableType
         DataType: String
         ModellingRule: Optional
-        Value: ""
       - Name: EventHandler1
         Type: EventHandler
         Children:
@@ -9665,7 +10820,6 @@ Children:
                 Type: BaseDataVariableType
                 DataType: VariablePointer
                 Description: {"NamespaceIndex":3,"TextId":"VariableToModifyDescription"}
-                Value: {"IdType":0,"Id":0,"Namespace":-1}
                 Children:
                 - Name: DynamicLink
                   Type: DynamicLink
@@ -9697,42 +10851,33 @@ Children:
                 DataType: UInt32
                 Description: {"NamespaceIndex":3,"TextId":"ArrayIndexDescription"}
                 ValueRank: ScalarOrOneDimension
-                Value: 0
         - Name: EventArguments
           Type: MouseDownEvent
           Children:
           - Name: EventId
             Type: PropertyType
             DataType: ByteString
-            Value: ""
           - Name: EventType
             Type: PropertyType
             DataType: NodeId
-            Value: {"IdType":0,"Id":0,"Namespace":-1}
           - Name: SourceNode
             Type: PropertyType
             DataType: NodeId
-            Value: {"IdType":0,"Id":0,"Namespace":-1}
           - Name: SourceName
             Type: PropertyType
             DataType: String
-            Value: ""
           - Name: Time
             Type: PropertyType
             DataType: UtcTime
-            Value: "1601-01-01T00:00:00.0000000"
           - Name: ReceiveTime
             Type: PropertyType
             DataType: UtcTime
-            Value: "1601-01-01T00:00:00.0000000"
           - Name: Message
             Type: PropertyType
             DataType: LocalizedText
-            Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
           - Name: Severity
             Type: PropertyType
             DataType: UInt16
-            Value: 0
       - Name: EventHandler2
         Type: EventHandler
         Children:
@@ -9766,7 +10911,6 @@ Children:
                 Type: BaseDataVariableType
                 DataType: VariablePointer
                 Description: {"NamespaceIndex":3,"TextId":"VariableToModifyDescription"}
-                Value: {"IdType":0,"Id":0,"Namespace":-1}
                 Children:
                 - Name: DynamicLink
                   Type: DynamicLink
@@ -9798,46 +10942,36 @@ Children:
                 DataType: UInt32
                 Description: {"NamespaceIndex":3,"TextId":"ArrayIndexDescription"}
                 ValueRank: ScalarOrOneDimension
-                Value: 0
         - Name: EventArguments
           Type: MouseUpEvent
           Children:
           - Name: EventId
             Type: PropertyType
             DataType: ByteString
-            Value: ""
           - Name: EventType
             Type: PropertyType
             DataType: NodeId
-            Value: {"IdType":0,"Id":0,"Namespace":-1}
           - Name: SourceNode
             Type: PropertyType
             DataType: NodeId
-            Value: {"IdType":0,"Id":0,"Namespace":-1}
           - Name: SourceName
             Type: PropertyType
             DataType: String
-            Value: ""
           - Name: Time
             Type: PropertyType
             DataType: UtcTime
-            Value: "1601-01-01T00:00:00.0000000"
           - Name: ReceiveTime
             Type: PropertyType
             DataType: UtcTime
-            Value: "1601-01-01T00:00:00.0000000"
           - Name: Message
             Type: PropertyType
             DataType: LocalizedText
-            Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
           - Name: Severity
             Type: PropertyType
             DataType: UInt16
-            Value: 0
       - Name: VariableToBeModified
         Type: NodePointer
         DataType: NodeId
-        Value: {"IdType":0,"Id":0,"Namespace":-1}
         Children:
         - Name: Kind
           Type: PropertyType
@@ -9860,7 +10994,6 @@ Children:
       - Name: ValueWhenReleased
         Type: BaseDataVariableType
         DataType: Int32
-        Value: 0
       - Name: Width
         Type: BaseVariableType
         DataType: Size
@@ -9875,7 +11008,6 @@ Children:
         Type: BaseDataVariableType
         DataType: ResourceUri
         ModellingRule: Optional
-        Value: ""
       - Name: ImageWidth
         Type: BaseDataVariableType
         DataType: Size
@@ -9928,12 +11060,10 @@ Children:
         Type: BaseVariableType
         DataType: HorizontalAlignment
         ModellingRule: Optional
-        Value: 0
       - Name: VerticalAlignment
         Type: BaseVariableType
         DataType: VerticalAlignment
         ModellingRule: Optional
-        Value: 0
       - Name: RightMargin
         Type: BaseVariableType
         DataType: Size
@@ -9983,12 +11113,10 @@ Children:
                 DataType: NodeId
                 Description: {"NamespaceIndex":5,"TextId":"OpenDialogAliasNodeDescription"}
                 ValueRank: ScalarOrOneDimension
-                Value: {"IdType":0,"Id":0,"Namespace":-1}
               - Name: ParentItem
                 Type: BaseDataVariableType
                 DataType: NodeId
                 Description: {"NamespaceIndex":5,"TextId":"OpenDialogParentItemDescription"}
-                Value: {"IdType":0,"Id":0,"Namespace":-1}
                 Children:
                 - Name: DynamicLink
                   Type: DynamicLink
@@ -10001,42 +11129,33 @@ Children:
                 Type: BaseDataVariableType
                 DataType: NodeId
                 Description: {"NamespaceIndex":5,"TextId":"OpenDialogDialogNodeIdDescription"}
-                Value: {"IdType":0,"Id":0,"Namespace":-1}
         - Name: EventArguments
           Type: MouseDownEvent
           Children:
           - Name: EventId
             Type: PropertyType
             DataType: ByteString
-            Value: ""
           - Name: EventType
             Type: PropertyType
             DataType: NodeId
-            Value: {"IdType":0,"Id":0,"Namespace":-1}
           - Name: SourceNode
             Type: PropertyType
             DataType: NodeId
-            Value: {"IdType":0,"Id":0,"Namespace":-1}
           - Name: SourceName
             Type: PropertyType
             DataType: String
-            Value: ""
           - Name: Time
             Type: PropertyType
             DataType: UtcTime
-            Value: "1601-01-01T00:00:00.0000000"
           - Name: ReceiveTime
             Type: PropertyType
             DataType: UtcTime
-            Value: "1601-01-01T00:00:00.0000000"
           - Name: Message
             Type: PropertyType
             DataType: LocalizedText
-            Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
           - Name: Severity
             Type: PropertyType
             DataType: UInt16
-            Value: 0
       - Name: BottomMargin
         Type: BaseVariableType
         DataType: Size
@@ -10048,7 +11167,6 @@ Children:
       - Name: Value
         Type: BaseDataVariableType
         DataType: Double
-        Value: 0.0
         Children:
         - Name: DynamicLink
           Type: DynamicLink
@@ -10089,12 +11207,10 @@ Children:
         Type: BaseDataVariableType
         DataType: Boolean
         ModellingRule: Optional
-        Value: false
       - Name: Editable
         Type: BaseDataVariableType
         DataType: Boolean
         ModellingRule: Optional
-        Value: false
       - Name: Height
         Type: BaseVariableType
         DataType: Size
@@ -10106,7 +11222,6 @@ Children:
       - Name: Value
         Type: BaseDataVariableType
         DataType: Double
-        Value: 0.0
         Children:
         - Name: DynamicLink
           Type: DynamicLink
@@ -10152,7 +11267,6 @@ Children:
     Type: BaseVariableType
     DataType: VerticalAlignment
     ModellingRule: Optional
-    Value: 0
   - Name: VSD_755TS_alias
     Type: Alias
     DataType: NodeId
@@ -10176,7 +11290,6 @@ Children:
     Type: BaseVariableType
     DataType: Size
     ModellingRule: Optional
-    Value: 0.0
   - Name: LeftMargin
     Type: BaseVariableType
     DataType: Size

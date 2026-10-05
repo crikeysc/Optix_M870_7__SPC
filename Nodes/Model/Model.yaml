@@ -9,7 +9,6 @@ Children:
     Id: g=0e8d42a92eff8971cfd53a4bcac356af
     Type: BaseDataVariableType
     DataType: Int32
-    Value: 0
     Children:
     - Name: DynamicLink
       Type: DynamicLink
@@ -23,7 +22,6 @@ Children:
   - Name: Cosine
     Type: BaseDataVariableType
     DataType: Int32
-    Value: 0
     Children:
     - Name: DynamicLink
       Type: DynamicLink
@@ -37,7 +35,6 @@ Children:
   - Name: Ramp
     Type: BaseDataVariableType
     DataType: Int32
-    Value: 0
     Children:
     - Name: DynamicLink
       Type: DynamicLink

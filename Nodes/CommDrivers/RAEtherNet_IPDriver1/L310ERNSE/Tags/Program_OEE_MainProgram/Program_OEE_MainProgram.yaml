@@ -1,0 +1,176 @@
+Name: 'Program:OEE_MainProgram'
+Type: FolderType
+Children:
+- Name: WC1
+  Type: OEE
+  DataType: OEE
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:OEE_MainProgram.WC1"
+  - Name: BlockRead
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: EnableIn
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:OEE_MainProgram.WC1.EnableIn"
+    - Name: Description
+      Type: RAEtherNetIPMetaTag
+      DataType: String
+      Value: "Enable Input - System Defined Parameter"
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:OEE_MainProgram.WC1.EnableIn.@Description"
+  - Name: EnableOut
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:OEE_MainProgram.WC1.EnableOut"
+    - Name: Description
+      Type: RAEtherNetIPMetaTag
+      DataType: String
+      Value: "Enable Output - System Defined Parameter"
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:OEE_MainProgram.WC1.EnableOut.@Description"
+  - Name: OEE_Operating_Time
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:OEE_MainProgram.WC1.OEE_Operating_Time"
+  - Name: OEE_Shift_Length
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:OEE_MainProgram.WC1.OEE_Shift_Length"
+  - Name: OEE_Short_Breaks
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:OEE_MainProgram.WC1.OEE_Short_Breaks"
+  - Name: OEE_Short_Length
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:OEE_MainProgram.WC1.OEE_Short_Length"
+  - Name: OEE_Meal_Breaks
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:OEE_MainProgram.WC1.OEE_Meal_Breaks"
+  - Name: OEE_Meal_Length
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:OEE_MainProgram.WC1.OEE_Meal_Length"
+  - Name: OEE_Run_Rate
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:OEE_MainProgram.WC1.OEE_Run_Rate"
+  - Name: OEE_Parts
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:OEE_MainProgram.WC1.OEE_Parts"
+  - Name: OEE_Good_Parts
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:OEE_MainProgram.WC1.OEE_Good_Parts"
+  - Name: OEE_Rejected_Parts
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:OEE_MainProgram.WC1.OEE_Rejected_Parts"
+  - Name: OEE_Availability
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:OEE_MainProgram.WC1.OEE_Availability"
+  - Name: OEE_Downtime
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:OEE_MainProgram.WC1.OEE_Downtime"
+  - Name: OEE_Performance
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:OEE_MainProgram.WC1.OEE_Performance"
+  - Name: OEE_Quality
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:OEE_MainProgram.WC1.OEE_Quality"
+  - Name: OEE_Overall
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:OEE_MainProgram.WC1.OEE_Overall"
+  - Name: OEE_Production_Time
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:OEE_MainProgram.WC1.OEE_Production_Time"

@@ -7,17 +7,13 @@ Children:
   - Name: iSin
     Type: BaseDataVariableType
     DataType: Int32
-    Value: 0
   - Name: iCos
     Type: BaseDataVariableType
     DataType: Int32
-    Value: 0
   - Name: iRamp
     Type: BaseDataVariableType
     DataType: Int32
-    Value: 0
   - Name: bRunSimulation
     Id: g=878881c945e22ad7b6c89022c8ef5b85
     Type: BaseDataVariableType
     DataType: Boolean
-    Value: false
