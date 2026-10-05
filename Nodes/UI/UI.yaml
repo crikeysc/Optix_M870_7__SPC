@@ -667,7 +667,7 @@ Children:
           ModellingRule: Optional
           Value: 34.0
         - Name: OriginalWidth
-          Type: BaseVariableType
+          Type: BaseDataVariableType
           DataType: Size
           Value: 15.854000091552734
         - Name: Height
@@ -676,7 +676,7 @@ Children:
           ModellingRule: Optional
           Value: 33.0
         - Name: OriginalHeight
-          Type: BaseVariableType
+          Type: BaseDataVariableType
           DataType: Size
           Value: 15.854999542236328
         - Name: ELEMENT_1

@@ -24,6 +24,10 @@ Project:
    Uri: 'urn:FTOptix:NetLogic'
    Module: FTOptix.NetLogic
    Version: 4.0
+  7:
+   Uri: 'urn:FTOptix:Core:Net'
+   Module: FTOptix.Core.Net
+   Version: 3.0
   8:
    Uri: 'urn:FTOptix:TagImporter'
    Module: FTOptix.TagImporter
@@ -32,10 +36,6 @@ Project:
    Uri: 'urn:FTOptix:RAEtherNetIPTagImporter'
    Module: FTOptix.RAEtherNetIPTagImporter
    Version: 1.0
-  11:
-   Uri: 'urn:FTOptix:Core:Net'
-   Module: FTOptix.Core.Net
-   Version: 3.0
  Statistics:
   TotalNodeCount: 5
   Objects: 1
