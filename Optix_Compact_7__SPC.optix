@@ -123,12 +123,12 @@ Project:
    Module: FTOptix.RAEtherNetIP.Net
    Version: 3.2
  Statistics:
-  TotalNodeCount: 10451
-  Objects: 859
+  TotalNodeCount: 9996
+  Objects: 864
   ObjectTypes: 25
-  Variables: 9533
-  VariableTypes: 12
-  DataTypes: 12
+  Variables: 9075
+  VariableTypes: 11
+  DataTypes: 11
   Methods: 10
   References: 69
   ReferenceTypes: 0

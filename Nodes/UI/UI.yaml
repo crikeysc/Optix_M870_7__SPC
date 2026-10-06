@@ -248,15 +248,14 @@ Children:
   - Name: Protocol
     Type: BaseDataVariableType
     DataType: Protocol
-    Value: 1
   - Name: IPAddress
     Type: BaseDataVariableType
     DataType: String
-    Value: "192.168.1.72"
+    Value: "192.168.1.78"
   - Name: Port
     Type: BaseDataVariableType
     DataType: UInt16
-    Value: 8443
+    Value: 8080
   - Name: StartWindow
     Type: NodePointer
     DataType: NodeId
@@ -1746,7 +1745,7 @@ Children:
                         Type: BaseDataVariableType
                         DataType: NodeId
                         Description: {"NamespaceIndex":5,"TextId":"ChangePanelNewPanelDescription"}
-                        Value: "/Objects/Optix_Compact_7__SPC/UI/Screens/AIN"
+                        Value: "/Objects/Optix_Compact_7__SPC/UI/Screens/PMP_Dash"
                       - Name: AliasNode
                         Type: BaseDataVariableType
                         DataType: NodeId
@@ -2012,6 +2011,16 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 480.0
+    - Name: HorizontalAlignment
+      Type: BaseVariableType
+      DataType: HorizontalAlignment
+      ModellingRule: Optional
+      Value: 3
+    - Name: VerticalAlignment
+      Type: BaseVariableType
+      DataType: VerticalAlignment
+      ModellingRule: Optional
+      Value: 3
   - Name: FullScreen
     Type: BaseDataVariableType
     DataType: Boolean

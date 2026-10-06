@@ -1,17 +1,22 @@
 Name: 'Program:Pump_Control'
 Type: FolderType
 Children:
+- Name: DegradedMode
+  Type: RAEtherNetIPTag
+  DataType: Boolean
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:Pump_Control.DegradedMode"
 - Name: FSW_154
-  Type: P_DIn
-  DataType: P_DIn
+  Type: RAEtherNetIPTag
+  DataType: Boolean
   Children:
   - Name: SymbolName
     Type: BaseDataVariableType
     DataType: String
     Value: "Program:Pump_Control.FSW_154"
-  - Name: BlockRead
-    Type: BaseDataVariableType
-    DataType: Boolean
   - Name: Description
     Type: RAEtherNetIPMetaTag
     DataType: String
@@ -3969,16 +3974,13 @@ Children:
         DataType: String
         Value: "Program:Pump_Control.FSW_154.P_DIn.@Description"
 - Name: FSW_155
-  Type: P_DIn
-  DataType: P_DIn
+  Type: RAEtherNetIPTag
+  DataType: Boolean
   Children:
   - Name: SymbolName
     Type: BaseDataVariableType
     DataType: String
     Value: "Program:Pump_Control.FSW_155"
-  - Name: BlockRead
-    Type: BaseDataVariableType
-    DataType: Boolean
   - Name: Description
     Type: RAEtherNetIPMetaTag
     DataType: String
@@ -7935,30 +7937,6 @@ Children:
         Type: BaseDataVariableType
         DataType: String
         Value: "Program:Pump_Control.FSW_155.P_DIn.@Description"
-- Name: InterLock_FSW_154
-  Type: RAEtherNetIPTag
-  DataType: Boolean
-  Children:
-  - Name: SymbolName
-    Type: BaseDataVariableType
-    DataType: String
-    Value: "Program:Pump_Control.InterLock_FSW_154"
-- Name: InterLock_LSH_151
-  Type: RAEtherNetIPTag
-  DataType: Boolean
-  Children:
-  - Name: SymbolName
-    Type: BaseDataVariableType
-    DataType: String
-    Value: "Program:Pump_Control.InterLock_LSH_151"
-- Name: InterLock_LSL_152
-  Type: RAEtherNetIPTag
-  DataType: Boolean
-  Children:
-  - Name: SymbolName
-    Type: BaseDataVariableType
-    DataType: String
-    Value: "Program:Pump_Control.InterLock_LSL_152"
 - Name: LeadPump
   Type: RAEtherNetIPTag
   DataType: Boolean
@@ -7968,16 +7946,13 @@ Children:
     DataType: String
     Value: "Program:Pump_Control.LeadPump"
 - Name: LSH_151
-  Type: P_DIn
-  DataType: P_DIn
+  Type: RAEtherNetIPTag
+  DataType: Boolean
   Children:
   - Name: SymbolName
     Type: BaseDataVariableType
     DataType: String
     Value: "Program:Pump_Control.LSH_151"
-  - Name: BlockRead
-    Type: BaseDataVariableType
-    DataType: Boolean
   - Name: Description
     Type: RAEtherNetIPMetaTag
     DataType: String
@@ -11935,16 +11910,13 @@ Children:
         DataType: String
         Value: "Program:Pump_Control.LSH_151.P_DIn.@Description"
 - Name: LSL_152
-  Type: P_DIn
-  DataType: P_DIn
+  Type: RAEtherNetIPTag
+  DataType: Boolean
   Children:
   - Name: SymbolName
     Type: BaseDataVariableType
     DataType: String
     Value: "Program:Pump_Control.LSL_152"
-  - Name: BlockRead
-    Type: BaseDataVariableType
-    DataType: Boolean
   - Name: Description
     Type: RAEtherNetIPMetaTag
     DataType: String
